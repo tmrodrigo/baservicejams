@@ -1,0 +1,15 @@
+#home {
+  background-image: url('assets/foto-grupo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+
+  img {
+    display: block;
+    margin: auto;
+  }
+}

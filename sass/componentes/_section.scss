@@ -1,0 +1,8 @@
+section {
+  padding: 24px;
+  min-height: 100vh;
+  @media (min-width: $screen-md-min) {
+    // min-height: 100vh;
+    padding: 48px;
+  }
+}

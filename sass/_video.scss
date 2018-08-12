@@ -1,0 +1,14 @@
+#video {
+  min-height: auto;
+  @media (min-width: $screen-sm-min) {
+    min-height: 100vh;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+    @media (min-width: $screen-sm-min) {
+      height: 100vh;
+    }
+  }
+
+}
