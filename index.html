@@ -11,10 +11,10 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="BA Service Jams" />
 		<meta property="og:description" content="Cambiemos el mundo en 48 horas. Desafiá tu capacidad de ideación y reforzá tu confianza creativa. Sumate a esta iniciativa global y participá desde Buenos Aires." />
-		<meta property="og:image" content="TODO/>
+		<meta property="og:image" content="TODO">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12764966-1 TODO"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12764966-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -381,6 +381,8 @@
 					</form>
 				</div>
 			</div>
+			<!-- Acá inyecta el instafeed -->
+			<div id="insta"></div>
 			<div id="redes">
 				<div class="contenedor">
 					<h2>Encontranos en las redes</h2>
@@ -419,19 +421,19 @@
 				}, 500);
 			});
 
-			$('#instafeed').slick({
-				dots: false,
-				infinite: true,
-				speed: 600,
-				slidesToShow: 10,
-				centerMode: true,
-				variableWidth: true,
-				autoplay: true,
-				autoplaySpeed: 2000,
-				prevArrow: "",
-				nextArrow: "",
-				draggable: false
-			});
+			// $('#instafeed').slick({
+			// 	dots: false,
+			// 	infinite: true,
+			// 	speed: 600,
+			// 	slidesToShow: 10,
+			// 	centerMode: true,
+			// 	variableWidth: true,
+			// 	autoplay: true,
+			// 	autoplaySpeed: 2000,
+			// 	prevArrow: "",
+			// 	nextArrow: "",
+			// 	draggable: false
+			// });
 
 			//instafeed + slick slider
 			/*var feed = new Instafeed({
@@ -471,6 +473,20 @@
 					$("#contact input[type='submit']").val("Por favor reintente...");
 				});
 			});
+
+			// Instagram feed acá, se inyecta en el tag #insta
+			$(document).ready(function(){
+				var userFeed = new Instafeed({
+        get: 'user',
+        userId: '7160524533',
+        accessToken: '7160524533.1677ed0.e11681a7cabc456ab49ce284a7a136b6',
+        tagName:'baservicejams',
+        limit: 24,
+        resolution: 'standard_resolution',
+    		});
+    		userFeed.run();
+			})
+
 		</script>
 	</body>
 </html>
