@@ -418,7 +418,36 @@ main #masjams .contenedor >div div p {
   width: 70%;
 }
 main #redes {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+main #redes .contenedor {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main #redes .contenedor h2 {
+  width: 100%;
+}
+main #redes .contenedor a .logo {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  margin: 0 20px;
+}
+main #redes .contenedor a.medium .logo {
+  background: url("/img/medium-logo.svg") no-repeat center center;
+  background-size: cover;
+}
+main #redes .contenedor a.instagram .logo {
+  background: url("/img/instagram-logo.svg") no-repeat center center;
+  background-size: cover;
+}
+main #redes .contenedor a.facebook .logo {
+  background: url("/img/facebook-logo.svg") no-repeat center center;
+  background-size: cover;
 }
 main .TODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODO {
   background: none;
@@ -451,7 +480,7 @@ main #servicios >div .contenedor {
   padding-left: 170px;
 }
 main #servicios >div .contenedor h2 {
-  color: #1d6f82;
+  color: verde;
   margin-bottom: 20px;
 }
 main #servicios >div .contenedor p {
@@ -463,7 +492,7 @@ main #servicios >div .contenedor ul li {
   margin-left: 20px;
 }
 footer {
-  background: #092b33;
+  background: #212121;
   color: #fff;
   text-align: center;
 }
@@ -532,7 +561,7 @@ footer #footer .contenedor >div div:first-of-type {
 footer #footer .contenedor >div div a.button {
   margin-right: 10px;
   background: #fff;
-  color: #1d6f82;
+  color: verde;
 }
 footer #footer .contenedor >div div a:not(.button) {
   text-transform: none;

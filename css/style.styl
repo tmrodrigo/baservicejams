@@ -333,7 +333,35 @@ main
 					p
 						width 70%
 	#redes
-		text-align center
+		display flex
+		justify-content center
+		padding espacioV*3 0
+		.contenedor
+			text-align center
+			display flex
+			flex-wrap wrap
+			justify-content center
+			h2
+				width 100%
+			a
+				.logo
+					width 70px
+					height 70px
+					display inline-block
+					margin 0 espacioH
+			a.medium
+				.logo
+					background url("/img/medium-logo.svg") no-repeat center center
+					background-size cover
+			a.instagram
+				.logo
+					background url("/img/instagram-logo.svg") no-repeat center center
+					background-size cover
+			a.facebook
+				.logo
+					background url("/img/facebook-logo.svg") no-repeat center center
+					background-size cover
+		
 
 	.TODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODO
 		background none
@@ -375,7 +403,7 @@ main
 						list-style-type square
 						margin-left espacioH
 footer
-	background azul
+	background gris
 	color white
 	text-align center
 	#footer
