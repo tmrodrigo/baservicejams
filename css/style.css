@@ -217,6 +217,15 @@ main #asisevivenlasservicejams .contenedor {
   text-align: center;
   max-width: 100%;
 }
+main #asisevivenlasservicejams .contenedor #instafeed .slick-list .slick-track a {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+main #asisevivenlasservicejams .contenedor #instafeed .slick-list .slick-track a img {
+  min-height: 100%;
+}
 main #equipo {
   padding: 60px 0;
   text-align: center;
