@@ -1,0 +1,443 @@
+//IMPORT
+@import variables
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,800');
+
+//GENERICOS
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+ul
+	list-style none
+	li
+		margin espacioV*.3 0
+h1
+	font-size 16px
+h2
+	font-size 30px
+	margin-bottom espacioV
+	a
+		font-size inherit
+		color #409DFA
+a
+	text-decoration none
+	display inline-block
+	color inherit
+	font-size 14px
+	cursor pointer
+	&.button
+		background black
+		color white
+		padding espacioV*.6 espacioH*.8
+		border-radius radio
+		font-weight bold
+		&.secondary
+			background none
+			border 1px solid black
+			color black
+input[type='submit']
+	text-transform uppercase
+	font-weight bold
+	font-size 14px
+	border none
+	color white
+	background black
+	padding espacioV*.6 espacioH*.8
+	border-radius radio
+	&.secondary
+		background none
+		border 1px solid black
+		color black
+p
+	line-height 22px
+.contenedor
+	width 100%
+	max-width 1100px
+	text-align left
+	display inline-block
+
+form
+	padding espacioV*3 0 0 0
+	input[type='email'], textarea
+		border none
+		border-radius 0
+		background white
+		height 30px
+		width 100%
+		margin-bottom espacioV*.5
+		font-size 14px
+		padding 0 espacioH*.5
+	textarea
+		height 120px
+		resize none
+		padding espacioV*.5
+
+//ESTILOS
+body
+	font-family Montserrat
+	font-size 16px
+	background: #f0f0f0
+	
+header, footer
+	display flex
+	justify-content center
+	border-bottom 1px solid rgba(255,255,255,.2)
+	height 70px
+	padding 0 espacioH
+	nav.contenedor
+		display flex
+		align-items center
+		justify-content space-between
+		ul
+			margin 0 0 0 espacioH*3
+			li
+				display inline-block
+				margin 0 0 0 espacioH
+main
+	#hero
+		text-align center
+		color white
+		display flex
+		justify-content center
+		align-items center
+		.contenedor.text
+			position absolute
+			display flex
+			align-items center
+			#logo
+				background url("/img/baservicejams.svg") no-repeat center center
+				background-size 100%
+				height 155px
+				width 155px
+				display inline-block
+			div
+				margin-left espacioH
+				p
+					font-weight bold
+					font-size 28px
+		.contenedor.video
+			max-width 100%
+			height 500px
+			overflow hidden
+			video
+				width 100%
+	#eventos
+		height 500px
+		display flex
+		align-items center
+		justify-content center
+		.contenedor
+			ul
+				display flex
+				align-items stretch
+				justify-content space-between
+				li
+					display flex
+					flex-wrap wrap
+					width 28%
+					margin 0 2.665%
+					.logo
+						background-size 100%
+						height 213px
+						width 148px
+						display inline-block
+						margin 0 auto espacioV auto
+					&#baservicejam
+						.logo
+							background url("/img/baservicejamlogo.svg") no-repeat center center
+					&#bagovjam
+						.logo
+							background url("/img/bagovjamlogo.svg") no-repeat center center
+					&#basusjam
+						.logo
+							background url("/img/basusjamlogo.svg") no-repeat center center
+					.date
+						margin-bottom espacioV*.2
+						font-weight bold
+						width 100%
+						text-align center
+					p
+						margin-bottom espacioV*.7
+						text-align center
+						width 100%
+					a
+						align-self flex-end
+						margin 0 auto
+	#queesunaservicejam
+		text-align center
+		background url("/img/queesunaservicejam.jpg") no-repeat center center
+		background-size cover
+		color white
+		padding espacioV*3 0
+		.contenedor
+			div
+				max-width 50%
+				p
+					margin-bottom espacioV
+					span.highlight
+						background white
+						color black
+	#asisevivenlasservicejams
+		padding espacioV*3 0
+		.contenedor
+			text-align center
+			max-width 100%
+	#equipo
+		padding espacioV*3 0
+		text-align center
+		.contenedor
+			text-align center
+			ul
+				display flex
+				flex-wrap wrap
+				justify-content flex-start
+				li
+					width 33%
+					display flex
+					align-items center
+					text-align left
+					div:first-child
+						width 30%
+						.pic
+							height 120px
+							width 100%
+							display inline-block
+					div:last-child
+						width 70%
+						padding 0 espacioH*2 0 espacioH
+						display flex
+						flex-wrap wrap
+						span
+							width 100%
+							&:not(:last-child)
+								margin-bottom espacioV*.3
+							&.name
+								font-weight bold
+							&.title
+								font-size 12px
+							a
+								img
+									height 25px
+									width 25px
+				li.magali .pic
+					background url("/img/team/magali.png") no-repeat center center
+					background-size 100%
+				li.jimena .pic
+					background url("/img/team/jimena.png") no-repeat center center
+					background-size 100%
+				li.azul .pic
+					background url("/img/team/azul.png") no-repeat center center
+					background-size 100%
+				li.piera .pic
+					background url("/img/team/piera.png") no-repeat center center
+					background-size 100%
+				li.tomas .pic
+					background url("/img/team/tomas.png") no-repeat center center
+					background-size 100%
+				li.mara .pic
+					background url("/img/team/mara.png") no-repeat center center
+					background-size 100%
+				li.juan .pic
+					background url("/img/team/juan.png") no-repeat center center
+					background-size 100%
+				li.pablo .pic
+					background url("/img/team/pablo.png") no-repeat center center
+					background-size 100%
+				li.rodrigo .pic
+					background url("/img/team/rodrigo.png") no-repeat center center
+					background-size 100%
+				li.federico .pic
+					background url("/img/team/federico.png") no-repeat center center
+					background-size 100%
+	#sponsors
+		text-align center
+		padding espacioV*3 0
+		.contenedor
+			text-align center
+			ul
+				display flex
+				justify-content center
+				flex-wrap wrap
+				li
+					height 100px
+					margin espacioV espacioH*3
+				li.areatres
+					width 100px
+					background url("/img/sponsors/area3-logo-byn.png") center center no-repeat
+					&:hover
+						background url("/img/sponsors/area3-logo.png") center center no-repeat
+				li.findasense
+					width 57px
+					background url("/img/sponsors/findasense-logo-byn.png") center center no-repeat
+					&:hover
+						background url("/img/sponsors/findasense-logo.png") center center no-repeat
+				li.eklos
+					width 157px
+					background url("/img/sponsors/eklos-logo-byn.png") center center no-repeat
+					&:hover
+						background url("/img/sponsors/eklos-logo.png") center center no-repeat
+				li.globant
+					width 100px
+					background url("/img/sponsors/globant-logo-byn.png") center center no-repeat
+					&:hover
+						background url("/img/sponsors/globant-logo.png") center center no-repeat
+				li.ibm
+					width 144px
+					background url("/img/sponsors/ibm-logo-byn.png") center center no-repeat
+					&:hover
+						background url("/img/sponsors/ibm-logo.png") center center no-repeat
+				li.mural
+					width 100px
+					background url("/img/sponsors/mural-logo-byn.png") center center no-repeat
+					&:hover
+						background url("/img/sponsors/mural-logo.png") center center no-repeat
+				li.coderhouse
+					width 209px
+					background url("/img/sponsors/coderhouse-logo-byn.png") center center no-repeat
+					&:hover
+						background url("/img/sponsors/coderhouse-logo.png") center center no-repeat
+				li.intercultura
+					width 100px
+					background url("/img/sponsors/intercultura-logo-byn.png") center center no-repeat
+					&:hover
+						background url("/img/sponsors/intercultura-logo.png") center center no-repeat
+			.contacto
+				display flex
+				justify-content space-between
+				margin espacioV*3 0 0 0
+				div, form
+					width 47%
+					text-align left
+	#masjams
+		display flex
+		justify-content center
+		padding espacioV*3
+		.contenedor
+			display flex
+			justify-content space-between
+			>div, form
+				width 47%
+				text-align left
+			>div
+				div
+					display flex
+					height 100%
+					.logo
+						background url("/img/masjams.svg") no-repeat top center
+						background-size 100%
+						width 20%
+						height 100%
+						display inline-block
+						margin-right 10%
+						flex-grow 1
+					p
+						width 70%
+	#redes
+		text-align center
+
+	.TODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODO
+		background none
+
+	#servicios
+		background #f0f0f0
+		color black
+		text-align center
+		#software-factory
+			.contenedor
+				background url('/img/software-factory.svg') no-repeat top left -12px +espacioH
+				background-size 147.22px
+				height 395px
+				padding-top 110px
+		#diseno-centrado-en-personas
+			.contenedor
+				background url('/img/diseno-centrado-en-las-personas.svg') no-repeat top left -12px +espacioH
+				background-size 147.22px
+				height 374px
+				padding-top 90px
+		#hardware-a-medida
+			.contenedor
+				background url('/img/hardware-a-medida.svg') no-repeat top left -12px +espacioH
+				background-size 147.22px
+				padding-top 90px
+				height 433px
+		>div
+			.contenedor
+				max-width 1200px
+				padding-left 150px+espacioH
+				h2
+					color verde
+					margin-bottom espacioV
+				p
+					margin-bottom espacioV
+					max-width 500px
+				ul
+					li
+						list-style-type square
+						margin-left espacioH
+footer
+	background azul
+	color white
+	text-align center
+	#footer
+		.contenedor
+			display flex
+			background url('/img/dots.svg') no-repeat top left -12px +espacioH
+			max-width 1200px
+			background-size 147.22px
+			margin 0 auto
+			padding 42px 0 42px 85px +espacioH
+			form
+				width 25%
+				margin-right 5%
+				h2
+					text-transform uppercase
+					font-size 20px
+					margin 0 0 espacioV 0
+				input[type='text'], input[type='email']
+					margin 0 0 espacioV 0
+					background none
+					color white
+					width 100%
+					border none
+					border-bottom 1px solid white
+					padding espacioV*.5 0
+					font-size inherit
+					&::placeholder
+						color #5E7479
+				input[type='submit']
+					margin espacioV 0 0 0
+			iframe
+				border-radius radio
+				margin-right 2%
+				width 40%
+				height 300px
+			>div
+				width 28%
+				display flex
+				flex-direction column
+				justify-content center
+				flex-wrap wrap
+				>*
+					width 100%
+				h2
+					font-size 24px
+				div
+					display flex
+					align-items center
+					margin espacioV*.3 0 0 0
+					&:first-of-type
+						margin espacioV 0 0 0
+					a.button
+						margin-right espacioH*.5
+						background white
+						color verde
+					a:not(.button)
+						text-transform none
+						font-weight normal
+	#nav
+		padding 0 espacioH
+		border-bottom none
+		border-top 1px solid rgba(255,255,255,.2)
+	
+//IMPORT
+@import mobile		

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.22 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+        opacity: 0;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_37" data-name="Group 37" transform="translate(-366 -589)">
+    <g id="Rectangle_30" data-name="Rectangle 30" class="cls-1" transform="translate(366 589)">
+      <rect class="cls-3" width="147.22" height="60"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="146.22" height="59"/>
+    </g>
+    <g id="Group_36" data-name="Group 36">
+      <line id="Line_8" data-name="Line 8" class="cls-2" y1="5" transform="translate(439.5 644)"/>
+      <line id="Line_19" data-name="Line 19" class="cls-2" y1="5" transform="translate(439.5 611)"/>
+      <line id="Line_9" data-name="Line 9" class="cls-2" y1="5" transform="translate(439.5 633)"/>
+      <line id="Line_20" data-name="Line 20" class="cls-2" y1="5" transform="translate(439.5 600)"/>
+      <line id="Line_10" data-name="Line 10" class="cls-2" y1="5" transform="translate(439.5 622)"/>
+      <line id="Line_21" data-name="Line 21" class="cls-2" y1="5" transform="translate(439.5 589)"/>
+    </g>
+  </g>
+</svg>

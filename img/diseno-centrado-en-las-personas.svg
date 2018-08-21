@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.216 761">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #e2e2e2;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #1d6f82;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="diseno-centrado-en-las-personas" transform="translate(-366 -1044.5)">
+    <line id="Line_17" data-name="Line 17" class="cls-1" y2="761" transform="translate(439.5 1044.5)"/>
+    <g id="diseno-centrado-en-las-personas-2" data-name="diseno-centrado-en-las-personas" transform="translate(870 -1508)">
+      <path id="Path_79" data-name="Path 79" class="cls-2" d="M49.071,0,0,28.332V85l49.071,28.332L98.142,85V28.332Z" transform="translate(-454.929 2727.657) rotate(-120)"/>
+      <g id="Group_27" data-name="Group 27" transform="translate(0 363)">
+        <path id="Path_53" data-name="Path 53" class="cls-3" d="M33.9,7.231a5.831,5.831,0,1,1,11.661,0" transform="translate(-470.56 2270.6)"/>
+        <path id="Path_54" data-name="Path 54" class="cls-3" d="M38.263,19.018A5.666,5.666,0,1,1,32.432,9.3" transform="translate(-482.696 2293.408)"/>
+        <path id="Path_55" data-name="Path 55" class="cls-3" d="M44.731,9.2A5.666,5.666,0,1,1,38.9,18.918" transform="translate(-456.125 2293.119)"/>
+        <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-3" cx="10.106" cy="10.106" r="10.106" transform="translate(-440.935 2287.159)"/>
+      </g>
+    </g>
+  </g>
+</svg>
