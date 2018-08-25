@@ -136,6 +136,7 @@ main #hero .contenedor.text div {
 main #hero .contenedor.text div p {
   font-weight: bold;
   font-size: 28px;
+  line-height: 35px;
 }
 main #hero .contenedor.video {
   max-width: 100%;

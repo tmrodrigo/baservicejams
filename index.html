@@ -51,7 +51,7 @@
 				<div class="contenedor text">
 					<span id="logo"></span>
 					<div>
-						<p>Vení a Jammear con nosotros!</p>
+						<p id="typewriteText">Vení a Jammear con nosotros!</p>
 					</div>
 				</div>
 				<div class="contenedor video">
@@ -312,6 +312,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="/js/instafeed.min.js"></script>
+		<script src="/js/typewrite.js"></script>
 		<script>
 			//scroll automático
 			$(document).on('click', 'a[href^="#"]', function (event) {
@@ -343,14 +344,14 @@
 				});
 			});
 
-			// Instagram feed acá, se inyecta en el tag #insta
+			// Instagram feed, se inyecta en el tag #insta
 			$(document).ready(function(){
 				var userFeed = new Instafeed({
-			        get: 'user',
-			        userId: '7160524533',
-			        accessToken: '7160524533.1677ed0.e11681a7cabc456ab49ce284a7a136b6',
-			        limit: 24,
-			        resolution: 'low_resolution',
+					get: 'user',
+					userId: '7160524533',
+					accessToken: '7160524533.1677ed0.e11681a7cabc456ab49ce284a7a136b6',
+					limit: 24,
+					resolution: 'low_resolution',
 					after: function() {
 						$('#instafeed').slick({
 							dots: false,
@@ -365,11 +366,49 @@
 							nextArrow: "",
 							draggable: false
 						});
-				    }
-    			});
-    			userFeed.run();
-			})
+					}
+				});
+				userFeed.run();
 
+				// Typewrite
+				$('#typewriteText').typewrite({
+					actions: [
+						{type: 'Vení a Jammear con nosotros!'},
+						{delay: 1000},
+						{remove: {num: 29, type: 'whole'}},
+						{delay: 500},
+						{type: 'Cambiá el mundo en 48 horas'},
+						{delay: 1000},
+						{remove: {num: 27, type: 'whole'}},
+						{delay: 1000},
+						{type: 'Desafiá tu capacidad de ideación '},
+						{type: '<br>'},
+						{type: ' y reforzá tu confianza creativa'},
+						{delay: 1500},
+						{remove: {num: 68, type: 'whole'}},
+					]
+				});
+				// Acá capturo cuando termina el evento y comienza el loop
+				$('#typewriteText').on('typewriteComplete', function() {
+					$('#typewriteText').typewrite({
+						actions: [
+						{type: 'Vení a Jammear con nosotros!'},
+						{delay: 1000},
+						{remove: {num: 29, type: 'whole'}},
+						{delay: 500},
+						{type: 'Cambiá el mundo en 48 horas'},
+						{delay: 1000},
+						{remove: {num: 27, type: 'whole'}},
+						{delay: 1000},
+						{type: 'Desafiá tu capacidad de ideación '},
+						{type: '<br>'},
+						{type: ' y reforzá tu confianza creativa'},
+						{delay: 1500},
+						{remove: {num: 68, type: 'whole'}},
+						]
+					});
+				})
+			});
 		</script>
 	</body>
 </html>
