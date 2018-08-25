@@ -53,12 +53,14 @@ p
 .contenedor
 	width 100%
 	max-width 1100px
+	overflow hidden
 	text-align left
 	display inline-block
 
 form
 	padding espacioV*3 0 0 0
 	input[type='email'], textarea
+		font-family monospace
 		border none
 		border-radius 0
 		background white
@@ -261,7 +263,7 @@ main
 				li.federico .pic
 					background url("/img/team/federico.png") no-repeat center center
 					background-size 100%
-	#sponsors
+	#partners
 		text-align center
 		padding espacioV*3 0
 		.contenedor
@@ -344,6 +346,14 @@ main
 						flex-grow 1
 					p
 						width 70%
+	#suscribite
+		display flex
+		justify-content center
+		padding espacioV*3 0
+		.contenedor
+			text-align left
+			width 100%
+			max-width 500px
 	#redes
 		display flex
 		justify-content center
@@ -373,111 +383,11 @@ main
 				.logo
 					background url("/img/facebook-logo.svg") no-repeat center center
 					background-size cover
-		
 
-	.TODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODO
-		background none
-
-	#servicios
-		background #f0f0f0
-		color black
-		text-align center
-		#software-factory
-			.contenedor
-				background url('/img/software-factory.svg') no-repeat top left -12px +espacioH
-				background-size 147.22px
-				height 395px
-				padding-top 110px
-		#diseno-centrado-en-personas
-			.contenedor
-				background url('/img/diseno-centrado-en-las-personas.svg') no-repeat top left -12px +espacioH
-				background-size 147.22px
-				height 374px
-				padding-top 90px
-		#hardware-a-medida
-			.contenedor
-				background url('/img/hardware-a-medida.svg') no-repeat top left -12px +espacioH
-				background-size 147.22px
-				padding-top 90px
-				height 433px
-		>div
-			.contenedor
-				max-width 1200px
-				padding-left 150px+espacioH
-				h2
-					color verde
-					margin-bottom espacioV
-				p
-					margin-bottom espacioV
-					max-width 500px
-				ul
-					li
-						list-style-type square
-						margin-left espacioH
 footer
 	background gris
 	color white
 	text-align center
-	#footer
-		.contenedor
-			display flex
-			background url('/img/dots.svg') no-repeat top left -12px +espacioH
-			max-width 1200px
-			background-size 147.22px
-			margin 0 auto
-			padding 42px 0 42px 85px +espacioH
-			form
-				width 25%
-				margin-right 5%
-				h2
-					text-transform uppercase
-					font-size 20px
-					margin 0 0 espacioV 0
-				input[type='text'], input[type='email']
-					margin 0 0 espacioV 0
-					background none
-					color white
-					width 100%
-					border none
-					border-bottom 1px solid white
-					padding espacioV*.5 0
-					font-size inherit
-					&::placeholder
-						color #5E7479
-				input[type='submit']
-					margin espacioV 0 0 0
-			iframe
-				border-radius radio
-				margin-right 2%
-				width 40%
-				height 300px
-			>div
-				width 28%
-				display flex
-				flex-direction column
-				justify-content center
-				flex-wrap wrap
-				>*
-					width 100%
-				h2
-					font-size 24px
-				div
-					display flex
-					align-items center
-					margin espacioV*.3 0 0 0
-					&:first-of-type
-						margin espacioV 0 0 0
-					a.button
-						margin-right espacioH*.5
-						background white
-						color verde
-					a:not(.button)
-						text-transform none
-						font-weight normal
-	#nav
-		padding 0 espacioH
-		border-bottom none
-		border-top 1px solid rgba(255,255,255,.2)
-	
+		
 //IMPORT
 @import mobile		

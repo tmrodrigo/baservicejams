@@ -1,59 +1,129 @@
 @media (max-width: 800px)
-	body
-		background-position right -100px top 50px
-		background-size 200%, 100vw
-	header, #nav
-		display flex
-		justify-content center
-		border-bottom 1px solid rgba(255,255,255,.2)
-		height 70px
-		color white
+	.contenedor
 		padding 0 espacioH
-		.contenedor
-			justify-content space-between
-			.logo
-				width 80px
+	h2
+		font-size 26px
+	form
+		input[type='email'], textarea
+			font-size 18px
+			height 50px
+		textarea
+			font-size 18px
+			height 200px
+
+	header, footer
+		nav.contenedor
+			padding 0
 			ul
-				margin 0
+				display none
 	main
 		#hero
-			.contenedor
-				background url('/img/dots.svg') no-repeat bottom -12px left -12px +espacioH
-				background-size 100px
-		#servicios
-			#software-factory
-				.contenedor
-					height auto
-					background-size 100px
-					padding-top 53px
-			#diseno-centrado-en-personas
-				.contenedor
-					height auto
-					background-size 100px
-					padding-top 20px
-			#hardware-a-medida
-				.contenedor
-					height auto
-					background-size 100px
-					padding-top 40px
-			>div
-				.contenedor
-					padding-left 100px+espacioH
-					padding-right espacioH
-					padding-bottom espacioV*2
-	footer
-		#footer
-			.contenedor
-				background-size 100px
+			display block
+			.contenedor.text
+				padding 0
+				height 500px
+				justify-content center
+				align-items center
 				flex-direction column
-				padding-left espacioH
-				padding-right espacioH
-				padding-top 76px
-				form
+				#logo
+					width 100px
+					height 100px
+					margin-bottom espacioV*2
+				div
 					width 100%
-					margin-bottom espacioV*3
-				iframe
+					height 145px
+					margin 0
+					padding 0 espacioH
+					p
+						font-size 24px
+			.contenedor.video
+				padding 0
+				video
+					height 100%
+					width auto
+		#eventos
+			display block
+			height auto
+			.contenedor
+				ul
+					flex-wrap wrap
+					li
+						width 100%
+						margin-bottom espacioV*3
+						&:first-child
+							margin-top espacioV*3
+		#queesunaservicejam
+			.contenedor
+				div
+					max-width 100%
+		#asisevivenlasservicejams
+			.contenedor
+				padding 0
+		#equipo
+			.contenedor
+				ul
+					li
+						width 100%
+						padding 0 0 espacioV 0
+						div:last-child
+							width 70%
+							padding 0 0 0 espacioH
+							span
+								&.name
+									font-size 20px
+								&.title
+									font-size 14px
+								a
+									img
+										height 40px
+										width 40px
+		#partners
+			.contenedor
+				ul
+					li
+						width 100% !important
+						margin espacioV 0
+						padding 0
+					li.areatres
+						background url("/img/sponsors/area3-logo.png") center center no-repeat
+					li.findasense
+						background url("/img/sponsors/findasense-logo.png") center center no-repeat
+					li.eklos
+						background url("/img/sponsors/eklos-logo.png") center center no-repeat
+					li.globant
+						background url("/img/sponsors/globant-logo.png") center center no-repeat
+					li.ibm
+						background url("/img/sponsors/ibm-logo.png") center center no-repeat
+					li.mural
+						background url("/img/sponsors/mural-logo.png") center center no-repeat
+					li.coderhouse
+						background url("/img/sponsors/coderhouse-logo.png") center center no-repeat
+					li.intercultura
+						background url("/img/sponsors/intercultura-logo.png") center center no-repeat
+				.contacto
+					flex-wrap wrap
+					div, form
+						width 100%
+		#masjams
+			padding 0
+			.contenedor
+				display block
+				>div, form
 					width 100%
-					margin-bottom espacioV*3
 				>div
-					width 100%
+					div
+						display block
+						text-align center
+						.logo
+							width 100px
+							height 150px
+							background-size contain
+							margin 0 0 espacioV 0
+						p
+							width 100%
+							text-align left
+		#redes
+			.contenedor
+				a
+					.logo
+						margin 0 espacioH*.5

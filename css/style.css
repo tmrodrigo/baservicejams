@@ -61,6 +61,7 @@ p {
 .contenedor {
   width: 100%;
   max-width: 1100px;
+  overflow: hidden;
   text-align: left;
   display: inline-block;
 }
@@ -69,6 +70,7 @@ form {
 }
 form input[type='email'],
 form textarea {
+  font-family: monospace;
   border: none;
   border-radius: 0;
   background: #fff;
@@ -315,85 +317,85 @@ main #equipo .contenedor ul li.federico .pic {
   background: url("/img/team/federico.png") no-repeat center center;
   background-size: 100%;
 }
-main #sponsors {
+main #partners {
   text-align: center;
   padding: 60px 0;
 }
-main #sponsors .contenedor {
+main #partners .contenedor {
   text-align: center;
 }
-main #sponsors .contenedor ul {
+main #partners .contenedor ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-main #sponsors .contenedor ul li {
+main #partners .contenedor ul li {
   height: 100px;
   margin: 20px 60px;
 }
-main #sponsors .contenedor ul li.areatres {
+main #partners .contenedor ul li.areatres {
   width: 100px;
   background: url("/img/sponsors/area3-logo-byn.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.areatres:hover {
+main #partners .contenedor ul li.areatres:hover {
   background: url("/img/sponsors/area3-logo.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.findasense {
+main #partners .contenedor ul li.findasense {
   width: 57px;
   background: url("/img/sponsors/findasense-logo-byn.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.findasense:hover {
+main #partners .contenedor ul li.findasense:hover {
   background: url("/img/sponsors/findasense-logo.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.eklos {
+main #partners .contenedor ul li.eklos {
   width: 157px;
   background: url("/img/sponsors/eklos-logo-byn.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.eklos:hover {
+main #partners .contenedor ul li.eklos:hover {
   background: url("/img/sponsors/eklos-logo.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.globant {
+main #partners .contenedor ul li.globant {
   width: 100px;
   background: url("/img/sponsors/globant-logo-byn.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.globant:hover {
+main #partners .contenedor ul li.globant:hover {
   background: url("/img/sponsors/globant-logo.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.ibm {
+main #partners .contenedor ul li.ibm {
   width: 144px;
   background: url("/img/sponsors/ibm-logo-byn.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.ibm:hover {
+main #partners .contenedor ul li.ibm:hover {
   background: url("/img/sponsors/ibm-logo.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.mural {
+main #partners .contenedor ul li.mural {
   width: 100px;
   background: url("/img/sponsors/mural-logo-byn.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.mural:hover {
+main #partners .contenedor ul li.mural:hover {
   background: url("/img/sponsors/mural-logo.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.coderhouse {
+main #partners .contenedor ul li.coderhouse {
   width: 209px;
   background: url("/img/sponsors/coderhouse-logo-byn.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.coderhouse:hover {
+main #partners .contenedor ul li.coderhouse:hover {
   background: url("/img/sponsors/coderhouse-logo.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.intercultura {
+main #partners .contenedor ul li.intercultura {
   width: 100px;
   background: url("/img/sponsors/intercultura-logo-byn.png") center center no-repeat;
 }
-main #sponsors .contenedor ul li.intercultura:hover {
+main #partners .contenedor ul li.intercultura:hover {
   background: url("/img/sponsors/intercultura-logo.png") center center no-repeat;
 }
-main #sponsors .contenedor .contacto {
+main #partners .contenedor .contacto {
   display: flex;
   justify-content: space-between;
   margin: 60px 0 0 0;
 }
-main #sponsors .contenedor .contacto div,
-main #sponsors .contenedor .contacto form {
+main #partners .contenedor .contacto div,
+main #partners .contenedor .contacto form {
   width: 47%;
   text-align: left;
 }
@@ -427,6 +429,16 @@ main #masjams .contenedor >div div .logo {
 main #masjams .contenedor >div div p {
   width: 70%;
 }
+main #suscribite {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+main #suscribite .contenedor {
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+}
 main #redes {
   display: flex;
   justify-content: center;
@@ -459,195 +471,165 @@ main #redes .contenedor a.facebook .logo {
   background: url("/img/facebook-logo.svg") no-repeat center center;
   background-size: cover;
 }
-main .TODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODO {
-  background: none;
-}
-main #servicios {
-  background: #f0f0f0;
-  color: #000;
-  text-align: center;
-}
-main #servicios #software-factory .contenedor {
-  background: url("/img/software-factory.svg") no-repeat top left 8px;
-  background-size: 147.22px;
-  height: 395px;
-  padding-top: 110px;
-}
-main #servicios #diseno-centrado-en-personas .contenedor {
-  background: url("/img/diseno-centrado-en-las-personas.svg") no-repeat top left 8px;
-  background-size: 147.22px;
-  height: 374px;
-  padding-top: 90px;
-}
-main #servicios #hardware-a-medida .contenedor {
-  background: url("/img/hardware-a-medida.svg") no-repeat top left 8px;
-  background-size: 147.22px;
-  padding-top: 90px;
-  height: 433px;
-}
-main #servicios >div .contenedor {
-  max-width: 1200px;
-  padding-left: 170px;
-}
-main #servicios >div .contenedor h2 {
-  color: verde;
-  margin-bottom: 20px;
-}
-main #servicios >div .contenedor p {
-  margin-bottom: 20px;
-  max-width: 500px;
-}
-main #servicios >div .contenedor ul li {
-  list-style-type: square;
-  margin-left: 20px;
-}
 footer {
   background: #212121;
   color: #fff;
   text-align: center;
 }
-footer #footer .contenedor {
-  display: flex;
-  background: url("/img/dots.svg") no-repeat top left 8px;
-  max-width: 1200px;
-  background-size: 147.22px;
-  margin: 0 auto;
-  padding: 42px 0 42px 105px;
-}
-footer #footer .contenedor form {
-  width: 25%;
-  margin-right: 5%;
-}
-footer #footer .contenedor form h2 {
-  text-transform: uppercase;
-  font-size: 20px;
-  margin: 0 0 20px 0;
-}
-footer #footer .contenedor form input[type='text'],
-footer #footer .contenedor form input[type='email'] {
-  margin: 0 0 20px 0;
-  background: none;
-  color: #fff;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #fff;
-  padding: 10px 0;
-  font-size: inherit;
-}
-footer #footer .contenedor form input[type='text']::placeholder,
-footer #footer .contenedor form input[type='email']::placeholder {
-  color: #5e7479;
-}
-footer #footer .contenedor form input[type='submit'] {
-  margin: 20px 0 0 0;
-}
-footer #footer .contenedor iframe {
-  border-radius: 4px;
-  margin-right: 2%;
-  width: 40%;
-  height: 300px;
-}
-footer #footer .contenedor >div {
-  width: 28%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-footer #footer .contenedor >div >* {
-  width: 100%;
-}
-footer #footer .contenedor >div h2 {
-  font-size: 24px;
-}
-footer #footer .contenedor >div div {
-  display: flex;
-  align-items: center;
-  margin: 6px 0 0 0;
-}
-footer #footer .contenedor >div div:first-of-type {
-  margin: 20px 0 0 0;
-}
-footer #footer .contenedor >div div a.button {
-  margin-right: 10px;
-  background: #fff;
-  color: verde;
-}
-footer #footer .contenedor >div div a:not(.button) {
-  text-transform: none;
-  font-weight: normal;
-}
-footer #nav {
-  padding: 0 20px;
-  border-bottom: none;
-  border-top: 1px solid rgba(255,255,255,0.2);
-}
 @media (max-width: 800px) {
-  body {
-    background-position: right -100px top 50px;
-    background-size: 200%, 100vw;
-  }
-  header,
-  #nav {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    height: 70px;
-    color: #fff;
+  .contenedor {
     padding: 0 20px;
   }
-  header .contenedor,
-  #nav .contenedor {
-    justify-content: space-between;
+  h2 {
+    font-size: 26px;
   }
-  header .contenedor .logo,
-  #nav .contenedor .logo {
-    width: 80px;
+  form input[type='email'],
+  form textarea {
+    font-size: 18px;
+    height: 50px;
   }
-  header .contenedor ul,
-  #nav .contenedor ul {
-    margin: 0;
+  form textarea {
+    font-size: 18px;
+    height: 200px;
   }
-  main #hero .contenedor {
-    background: url("/img/dots.svg") no-repeat bottom -12px left 8px;
-    background-size: 100px;
+  header nav.contenedor,
+  footer nav.contenedor {
+    padding: 0;
   }
-  main #servicios #software-factory .contenedor {
-    height: auto;
-    background-size: 100px;
-    padding-top: 53px;
+  header nav.contenedor ul,
+  footer nav.contenedor ul {
+    display: none;
   }
-  main #servicios #diseno-centrado-en-personas .contenedor {
-    height: auto;
-    background-size: 100px;
-    padding-top: 20px;
+  main #hero {
+    display: block;
   }
-  main #servicios #hardware-a-medida .contenedor {
-    height: auto;
-    background-size: 100px;
-    padding-top: 40px;
-  }
-  main #servicios >div .contenedor {
-    padding-left: 120px;
-    padding-right: 20px;
-    padding-bottom: 40px;
-  }
-  footer #footer .contenedor {
-    background-size: 100px;
+  main #hero .contenedor.text {
+    padding: 0;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 76px;
   }
-  footer #footer .contenedor form {
+  main #hero .contenedor.text #logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  main #hero .contenedor.text div {
+    width: 100%;
+    height: 145px;
+    margin: 0;
+    padding: 0 20px;
+  }
+  main #hero .contenedor.text div p {
+    font-size: 24px;
+  }
+  main #hero .contenedor.video {
+    padding: 0;
+  }
+  main #hero .contenedor.video video {
+    height: 100%;
+    width: auto;
+  }
+  main #eventos {
+    display: block;
+    height: auto;
+  }
+  main #eventos .contenedor ul {
+    flex-wrap: wrap;
+  }
+  main #eventos .contenedor ul li {
     width: 100%;
     margin-bottom: 60px;
   }
-  footer #footer .contenedor iframe {
-    width: 100%;
-    margin-bottom: 60px;
+  main #eventos .contenedor ul li:first-child {
+    margin-top: 60px;
   }
-  footer #footer .contenedor >div {
+  main #queesunaservicejam .contenedor div {
+    max-width: 100%;
+  }
+  main #asisevivenlasservicejams .contenedor {
+    padding: 0;
+  }
+  main #equipo .contenedor ul li {
     width: 100%;
+    padding: 0 0 20px 0;
+  }
+  main #equipo .contenedor ul li div:last-child {
+    width: 70%;
+    padding: 0 0 0 20px;
+  }
+  main #equipo .contenedor ul li div:last-child span.name {
+    font-size: 20px;
+  }
+  main #equipo .contenedor ul li div:last-child span.title {
+    font-size: 14px;
+  }
+  main #equipo .contenedor ul li div:last-child span a img {
+    height: 40px;
+    width: 40px;
+  }
+  main #partners .contenedor ul li {
+    width: 100% !important;
+    margin: 20px 0;
+    padding: 0;
+  }
+  main #partners .contenedor ul li.areatres {
+    background: url("/img/sponsors/area3-logo.png") center center no-repeat;
+  }
+  main #partners .contenedor ul li.findasense {
+    background: url("/img/sponsors/findasense-logo.png") center center no-repeat;
+  }
+  main #partners .contenedor ul li.eklos {
+    background: url("/img/sponsors/eklos-logo.png") center center no-repeat;
+  }
+  main #partners .contenedor ul li.globant {
+    background: url("/img/sponsors/globant-logo.png") center center no-repeat;
+  }
+  main #partners .contenedor ul li.ibm {
+    background: url("/img/sponsors/ibm-logo.png") center center no-repeat;
+  }
+  main #partners .contenedor ul li.mural {
+    background: url("/img/sponsors/mural-logo.png") center center no-repeat;
+  }
+  main #partners .contenedor ul li.coderhouse {
+    background: url("/img/sponsors/coderhouse-logo.png") center center no-repeat;
+  }
+  main #partners .contenedor ul li.intercultura {
+    background: url("/img/sponsors/intercultura-logo.png") center center no-repeat;
+  }
+  main #partners .contenedor .contacto {
+    flex-wrap: wrap;
+  }
+  main #partners .contenedor .contacto div,
+  main #partners .contenedor .contacto form {
+    width: 100%;
+  }
+  main #masjams {
+    padding: 0;
+  }
+  main #masjams .contenedor {
+    display: block;
+  }
+  main #masjams .contenedor >div,
+  main #masjams .contenedor form {
+    width: 100%;
+  }
+  main #masjams .contenedor >div div {
+    display: block;
+    text-align: center;
+  }
+  main #masjams .contenedor >div div .logo {
+    width: 100px;
+    height: 150px;
+    background-size: contain;
+    margin: 0 0 20px 0;
+  }
+  main #masjams .contenedor >div div p {
+    width: 100%;
+    text-align: left;
+  }
+  main #redes .contenedor a .logo {
+    margin: 0 10px;
   }
 }
