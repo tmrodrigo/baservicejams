@@ -252,7 +252,8 @@ main #equipo .contenedor ul li div:first-child {
 }
 main #equipo .contenedor ul li div:first-child .pic {
   height: 120px;
-  width: 100%;
+  width: 120px;
+  text-align: center;
   display: inline-block;
 }
 main #equipo .contenedor ul li div:last-child {
@@ -502,6 +503,7 @@ footer {
   }
   main #hero {
     display: block;
+    background: url("/img/hero.jpg") no-repeat center center;
   }
   main #hero .contenedor.text {
     padding: 0;
