@@ -12,6 +12,8 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         'X-Mailer: PHP/' . phpversion();
 
     mail($para, $titulo, $contenido, $cabeceras);
+
+    header("Location: https://www.baservicejams.com");
 }
 
 ?>
