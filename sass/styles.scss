@@ -1,13 +1,6 @@
-@import "default-variables";
-@import "overrides";
-
-@import "componentes/section";
-@import "componentes/list-wrapper";
-@import "componentes/social-wrapper";
-
-
-// Pages
-@import "home";
-@import "video";
-@import "info";
-@import "list";
+@import "_reset.scss";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,800");
+@import "general.scss";
+@import "home.scss";
+@import "events.scss";
+@import "footer.scss";

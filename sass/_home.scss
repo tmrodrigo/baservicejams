@@ -1,15 +1,40 @@
-#home {
-  background-image: url('assets/foto-grupo.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-
-  img {
-    display: block;
-    margin: auto;
-  }
+#hero {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    background-color: transparentize(#000, 0.6);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+    @media only screen and (min-width: 600px) {
+        height: 70vh;
+    }
+    .text {
+        display: flex;
+        align-items: center;
+        img {
+            width: 80px;
+            margin-left: 20px;
+        }
+        p {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 35px;
+            text-align: left;
+        }
+        @media only screen and (min-width: 600px) {
+            width: 60%;
+            margin-left: 20%;
+            justify-content: flex-start;
+            img {
+                width: 150px;
+                margin-right: 20px;
+            }
+            p {
+                font-size: 35px;
+                min-height: 80px;
+            }
+        }
+    }
 }

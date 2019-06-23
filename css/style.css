@@ -1,0 +1,940 @@
+body {
+        font-family: Montserrat;
+        font-size: 16px;
+        background: #f0f0f0;
+    }
+    
+    .contenedor {
+        width: 100%;
+        max-width: 1100px;
+    }
+    
+    section,
+    footer {
+        background: white;
+    }
+    
+    header {
+        display: flex;
+        justify-content: center;
+        background: #f3 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        height: 70px;
+        padding: 0 20px;
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            ul {
+                display: none;
+                margin: 0 0 0 60px;
+                @media only screen and (min-width: 600px) {
+                    display: flex;
+                }
+                li {
+                    display: inline-block;
+                    margin: 0 0 0 20px;
+                }
+            }
+            h1 {
+                font-weight: bold;
+            }
+        }
+    }
+    
+    #hero {
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 50vh;
+        @media only screen and (min-width: 600px) {
+            height: 100vh;
+        }
+        .text {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            img {
+                width: 80px;
+                margin-left: 20px;
+            }
+            p {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 35px;
+                text-align: left;
+            }
+            @media only screen and (min-width: 600px) {
+                width: 60%;
+                justify-content: space-around;
+                img {
+                    width: 150px;
+                }
+                p {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+    
+    #eventoPrincipal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .event-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            // width: 50%;
+            // margin-left: 25%;
+            // img {
+            //     width: 220px;
+            // }
+        }
+    }
+    
+    .sponsor-row .item-wrapper img {
+        width: 150px;
+        margin: 0 20px 0 0 !important;
+    }
+    
+    .sponsor-row .item-wrapper img.round {
+        width: 90px;
+    }
+    
+    .btn-sponsor {
+        background: transparent !important;
+        color: black !important;
+        margin-top: 20px;
+        text-decoration: underline;
+        font-weight: normal !important;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        header {
+            position: fixed;
+            width: 100%;
+            background: #f0f0f0;
+            z-index: 1000;
+        }
+        #eventoPrincipal .contenedor ul {
+            width: 50%;
+            height: 250px;
+            margin-left: 25%;
+            justify-content: space-between;
+            margin-top: 150px;
+        }
+        .sponsor-row {
+            width: 70%;
+            margin-left: 15% !important;
+            display: flex;
+            justify-content: space-between;
+            min-height: 280px;
+        }
+        .sponsor-row .item-wrapper {
+            display: flex;
+            flex-flow: column;
+            align-content: flex-start;
+        }
+        .sponsor-row .item-wrapper h4 {
+            text-align: left !important;
+        }
+        .sponsor-row .item-wrapper .logos {
+            margin: 0 !important;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        display: inline-block;
+        color: inherit;
+        font-size: 14px;
+        cursor: pointer;
+        &.button {
+            background: #000;
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        &.button.secondary {
+            background: none;
+            border: 1px solid #212121;
+            color: #212121;
+        }
+        &.button.disabled {
+            opacity: 0.5;
+            cursor: default;
+        }
+    }
+    
+    t-align: center;
+    margin: 30px 0 0 0;
+}
+main #eventoPrincipal .contenedor div h4 {
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+main #eventoPrincipal .contenedor div ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main #eventoPrincipal .contenedor div ul li {
+    height: 32px;
+    margin: 0 20px;
+    background-position: center center, 1000px 1000px;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+main #eventoPrincipal .contenedor div ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+main #eventoPrincipal .contenedor div ul li.garagedeideas {
+    width: 74.5px;
+    background-image: url("/img/sponsors/garagedeideas-logo-byn.png"), url("/img/sponsors/garagedeideas-logo.png");
+}
+main #eventoPrincipal .contenedor div ul li.garagedeideas:hover {
+    background: url("/img/sponsors/garagedeideas-logo.png") center center no-repeat;
+    background-size: 100%;
+}
+main #eventoPrincipal .contenedor div ul li.globant {
+    width: 112.5px;
+    background-image: url("/img/sponsors/globant-logo-byn.png"), url("/img/sponsors/globant-logo.png");
+}
+main #eventoPrincipal .contenedor div ul li.globant:hover {
+    background: url("/img/sponsors/globant-logo.png") center center no-repeat;
+    background-size: 100%;
+}
+main #eventoPrincipal .contenedor div ul li.rosenfeld {
+    width: 103.5px;
+    background-image: url("/img/sponsors/rosenfeld-logo-byn.png"), url("/img/sponsors/rosenfeld-logo.png");
+}
+main #eventoPrincipal .contenedor div ul li.rosenfeld:hover {
+    background: url("/img/sponsors/rosenfeld-logo.png") center center no-repeat;
+    background-size: 100%;
+}
+main #eventoPrincipal .contenedor div ul li.icbc {
+    width: 83px;
+    background-image: url("/img/sponsors/icbc-logo-byn.png"), url("/img/sponsors/icbc-logo.png");
+}
+main #eventoPrincipal .contenedor div ul li.icbc:hover {
+    background: url("/img/sponsors/icbc-logo.png") center center no-repeat;
+    background-size: 100%;
+}
+main #eventoPrincipal .contenedor div ul li.hexacta {
+    width: 127.5px;
+    background-image: url("/img/sponsors/hexacta-logo-byn.png"), url("/img/sponsors/hexacta-logo.png");
+}
+main #eventoPrincipal .contenedor div ul li.hexacta:hover {
+    background: url("/img/sponsors/hexacta-logo.png") center center no-repeat;
+    background-size: 100%;
+}
+main #eventoPrincipal .contenedor div ul li.ibm {
+    width: 72px;
+    background-image: url("/img/sponsors/ibm-logo-byn.png"), url("/img/sponsors/ibm-logo.png");
+}
+main #eventoPrincipal .contenedor div ul li.ibm:hover {
+    background: url("/img/sponsors/ibm-logo.png") center center no-repeat;
+    background-size: 100%;
+}
+main #eventos {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main #eventos .contenedor {
+    text-align: center;
+}
+main #eventos .contenedor ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+main #eventos .contenedor ul li {
+    display: flex;
+    flex-wrap: wrap;
+    width: 28%;
+    margin: 0 2.665%;
+}
+main #eventos .contenedor ul li .logo {
+    background-size: 100%;
+    height: 213px;
+    width: 148px;
+    display: inline-block;
+    margin: 0 auto 20px auto;
+}
+main #eventos .contenedor ul li#baservicejam .logo {
+    background: url("/img/baservicejamlogo.svg") no-repeat center center;
+}
+main #eventos .contenedor ul li#bagovjam .logo {
+    background: url("/img/bagovjamlogo.svg") no-repeat center center;
+}
+main #eventos .contenedor ul li#basusjam .logo {
+    background: url("/img/basusjamlogo.svg") no-repeat center center;
+}
+main #eventos .contenedor ul li .date {
+    margin-bottom: 4px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+main #eventos .contenedor ul li p {
+    margin-bottom: 14px;
+    text-align: center;
+    width: 100%;
+}
+main #eventos .contenedor ul li a {
+    align-self: flex-end;
+    margin: 0 auto;
+}
+main #queesunaservicejam {
+    text-align: center;
+    background: url("/img/queesunaservicejam.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 60px 0;
+}
+main #queesunaservicejam .contenedor div {
+    max-width: 50%;
+}
+main #queesunaservicejam .contenedor div p {
+    margin-bottom: 20px;
+}
+main #queesunaservicejam .contenedor div p span.highlight {
+    background: #fff;
+    color: #000;
+}
+main #asisevivenlasservicejams {
+    padding: 60px 0;
+}
+main #asisevivenlasservicejams .contenedor {
+    text-align: center;
+    max-width: 100%;
+}
+main #asisevivenlasservicejams .contenedor #instafeed .slick-list .slick-track a {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+main #asisevivenlasservicejams .contenedor #instafeed .slick-list .slick-track a img {
+    min-height: 100%;
+}
+main #equipo {
+    padding: 60px 0;
+    text-align: center;
+}
+main #equipo .contenedor {
+    text-align: center;
+}
+main #equipo .contenedor ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+main #equipo .contenedor ul li {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+main #equipo .contenedor ul li div:first-child {
+    width: 30%;
+}
+main #equipo .contenedor ul li div:first-child .pic {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+}
+main #equipo .contenedor ul li div:last-child {
+    width: 70%;
+    padding: 0 40px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main #equipo .contenedor ul li div:last-child span {
+    width: 100%;
+}
+main #equipo .contenedor ul li div:last-child span:not(:last-child) {
+    margin-bottom: 6px;
+}
+main #equipo .contenedor ul li div:last-child span.name {
+    font-weight: bold;
+}
+main #equipo .contenedor ul li div:last-child span.title {
+    font-size: 12px;
+}
+main #equipo .contenedor ul li div:last-child span a img {
+    height: 25px;
+    width: 25px;
+}
+main #equipo .contenedor ul li.magali .pic {
+    background: url("/img/team/magali.png") no-repeat center center;
+    background-size: 100%;
+}
+main #equipo .contenedor ul li.jimena .pic {
+    background: url("/img/team/jimena.png") no-repeat center center;
+    background-size: 100%;
+}
+main #equipo .contenedor ul li.melanie .pic {
+    background: url("/img/team/melanie.png") no-repeat center center;
+    background-size: 100%;
+}
+main #equipo .contenedor ul li.piera .pic {
+    background: url("/img/team/piera.png") no-repeat center center;
+    background-size: 100%;
+}
+main #equipo .contenedor ul li.tomas .pic {
+    background: url("/img/team/tomas.png") no-repeat center center;
+    background-size: 100%;
+}
+main #equipo .contenedor ul li.mara .pic {
+    background: url("/img/team/mara.png") no-repeat center center;
+    background-size: 100%;
+}
+main #equipo .contenedor ul li.juan .pic {
+    background: url("/img/team/juan.png") no-repeat center center;
+    background-size: 100%;
+}
+main #equipo .contenedor ul li.pablo .pic {
+    background: url("/img/team/pablo.png") no-repeat center center;
+    background-size: 100%;
+}
+main #equipo .contenedor ul li.rodrigo .pic {
+    background: url("/img/team/rodrigo.png") no-repeat center center;
+    background-size: 100%;
+}
+main #equipo .contenedor ul li.federico .pic {
+    background: url("/img/team/federico.png") no-repeat center center;
+    background-size: 100%;
+}
+main #partners {
+    text-align: center;
+    padding: 60px 0;
+}
+main #partners .contenedor {
+    text-align: center;
+}
+main #partners .contenedor ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main #partners .contenedor ul li {
+    height: 100px;
+    margin: 20px 60px;
+    background-position: center center, 1000px 1000px;
+    background-repeat: no-repeat;
+}
+main #partners .contenedor ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+main #partners .contenedor ul li.areatres {
+    width: 100px;
+    background-image: url("/img/sponsors/area3-logo-byn.png"), url("/img/sponsors/area3-logo.png");
+}
+main #partners .contenedor ul li.areatres:hover {
+    background: url("/img/sponsors/area3-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.findasense {
+    width: 178px;
+    background-image: url("/img/sponsors/findasense-logo-byn.png"), url("/img/sponsors/findasense-logo.png");
+}
+main #partners .contenedor ul li.findasense:hover {
+    background: url("/img/sponsors/findasense-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.eklos {
+    width: 157px;
+    background-image: url("/img/sponsors/eklos-logo-byn.png"), url("/img/sponsors/eklos-logo.png");
+}
+main #partners .contenedor ul li.eklos:hover {
+    background: url("/img/sponsors/eklos-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.globant {
+    width: 225px;
+    background-image: url("/img/sponsors/globant-logo-byn.png"), url("/img/sponsors/globant-logo.png");
+}
+main #partners .contenedor ul li.globant:hover {
+    background: url("/img/sponsors/globant-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.rosenfeld {
+    width: 207px;
+    background-image: url("/img/sponsors/rosenfeld-logo-byn.png"), url("/img/sponsors/rosenfeld-logo.png");
+}
+main #partners .contenedor ul li.rosenfeld:hover {
+    background: url("/img/sponsors/rosenfeld-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.icbc {
+    width: 166px;
+    background-image: url("/img/sponsors/icbc-logo-byn.png"), url("/img/sponsors/icbc-logo.png");
+}
+main #partners .contenedor ul li.icbc:hover {
+    background: url("/img/sponsors/icbc-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.hexacta {
+    width: 255px;
+    background-image: url("/img/sponsors/hexacta-logo-byn.png"), url("/img/sponsors/hexacta-logo.png");
+}
+main #partners .contenedor ul li.hexacta:hover {
+    background: url("/img/sponsors/hexacta-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.ibm {
+    width: 144px;
+    background-image: url("/img/sponsors/ibm-logo-byn.png"), url("/img/sponsors/ibm-logo.png");
+}
+main #partners .contenedor ul li.ibm:hover {
+    background: url("/img/sponsors/ibm-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.mural {
+    width: 100px;
+    background-image: url("/img/sponsors/mural-logo-byn.png"), url("/img/sponsors/mural-logo.png");
+}
+main #partners .contenedor ul li.mural:hover {
+    background: url("/img/sponsors/mural-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.coderhouse {
+    width: 209px;
+    background-image: url("/img/sponsors/coderhouse-logo-byn.png"), url("/img/sponsors/coderhouse-logo.png");
+}
+main #partners .contenedor ul li.coderhouse:hover {
+    background: url("/img/sponsors/coderhouse-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.intercultura {
+    width: 100px;
+    background-image: url("/img/sponsors/intercultura-logo-byn.png"), url("/img/sponsors/intercultura-logo.png");
+}
+main #partners .contenedor ul li.intercultura:hover {
+    background: url("/img/sponsors/intercultura-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.bid {
+    width: 167px;
+    background-image: url("/img/sponsors/bid-logo-byn.png"), url("/img/sponsors/bid-logo.png");
+}
+main #partners .contenedor ul li.bid:hover {
+    background: url("/img/sponsors/bid-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.galicia {
+    width: 215px;
+    background-image: url("/img/sponsors/galicia-logo-byn.png"), url("/img/sponsors/galicia-logo.png");
+}
+main #partners .contenedor ul li.galicia:hover {
+    background: url("/img/sponsors/galicia-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.garagedeideas {
+    width: 149px;
+    background-image: url("/img/sponsors/garagedeideas-logo-byn.png"), url("/img/sponsors/garagedeideas-logo.png");
+}
+main #partners .contenedor ul li.garagedeideas:hover {
+    background: url("/img/sponsors/garagedeideas-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.intallab {
+    width: 245px;
+    background-image: url("/img/sponsors/intallab-logo-byn.png"), url("/img/sponsors/intallab-logo.png");
+}
+main #partners .contenedor ul li.intallab:hover {
+    background: url("/img/sponsors/intallab-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.labgobar {
+    width: 183px;
+    background-image: url("/img/sponsors/labgobar-logo-byn.png"), url("/img/sponsors/labgobar-logo.png");
+}
+main #partners .contenedor ul li.labgobar:hover {
+    background: url("/img/sponsors/labgobar-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.modernizacion {
+    width: 259px;
+    background-image: url("/img/sponsors/modernizacion-logo-byn.png"), url("/img/sponsors/modernizacion-logo.png");
+}
+main #partners .contenedor ul li.modernizacion:hover {
+    background: url("/img/sponsors/modernizacion-logo.png") center center no-repeat;
+}
+main #partners .contenedor ul li.reweb {
+    width: 187px;
+    background-image: url("/img/sponsors/reweb-logo-byn.png"), url("/img/sponsors/reweb-logo.png");
+}
+main #partners .contenedor ul li.reweb:hover {
+    background: url("/img/sponsors/reweb-logo.png") center center no-repeat;
+}
+main #partners .contenedor .contacto {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 0 0;
+}
+main #partners .contenedor .contacto div,
+main #partners .contenedor .contacto form {
+    width: 47%;
+    text-align: left;
+}
+main #masjams {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+main #masjams .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+main #masjams .contenedor>div,
+main #masjams .contenedor form {
+    width: 47%;
+    text-align: left;
+}
+main #masjams .contenedor>div div {
+    display: flex;
+    height: 100%;
+}
+main #masjams .contenedor>div div .logo {
+    background: url("/img/masjams.svg") no-repeat top center;
+    background-size: 100%;
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    margin-right: 10%;
+    flex-grow: 1;
+}
+main #masjams .contenedor>div div p {
+    width: 70%;
+}
+main #suscribite {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+main #suscribite .contenedor {
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+main #redes {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+main #redes .contenedor {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main #redes .contenedor h2 {
+    width: 100%;
+}
+main #redes .contenedor a .logo {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin: 0 20px;
+}
+main #redes .contenedor a.medium .logo {
+    background: url("/img/medium-logo.svg") no-repeat center center;
+    background-size: cover;
+}
+main #redes .contenedor a.instagram .logo {
+    background: url("/img/instagram-logo.svg") no-repeat center center;
+    background-size: cover;
+}
+main #redes .contenedor a.facebook .logo {
+    background: url("/img/facebook-logo.svg") no-repeat center center;
+    background-size: cover;
+}
+footer {
+    background: #212121;
+    color: #fff;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .contenedor {
+        padding: 0 20px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    form input[type='email'],
+    form textarea {
+        font-size: 18px;
+        height: 50px;
+    }
+    
+    form textarea {
+        font-size: 18px;
+        height: 200px;
+    }
+    
+    header nav.contenedor,
+    footer nav.contenedor {
+        padding: 0;
+    }
+    
+    header nav.contenedor ul,
+    footer nav.contenedor ul {
+        display: none;
+    }
+    
+    main #hero {
+        display: block;
+        background: url("/img/hero.jpg") no-repeat center center;
+    }
+    
+    main #hero .contenedor.text {
+        padding: 0;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    main #hero .contenedor.text #logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+    
+    main #hero .contenedor.text div {
+        width: 100%;
+        height: 145px;
+        margin: 0;
+        padding: 0 20px;
+    }
+    
+    main #hero .contenedor.text div p {
+        font-size: 24px;
+    }
+    
+    main #hero .contenedor.video {
+        padding: 0;
+    }
+    
+    main #hero .contenedor.video video {
+        height: 100%;
+        width: auto;
+    }
+    
+    main #eventoPrincipal {
+        display: block;
+        height: auto;
+        padding: 40px 0;
+    }
+    
+    main #eventoPrincipal .contenedor>ul {
+        flex-wrap: wrap;
+    }
+    
+    main #eventoPrincipal .contenedor>ul li {
+        align-items: center;
+    }
+    
+    main #eventoPrincipal .contenedor>ul li .logo {
+        margin: 0;
+    }
+    
+    main #eventoPrincipal .contenedor div ul li {
+        margin: 10px 20px;
+    }
+    
+    main #eventoPrincipal .contenedor div ul li.globant {
+        background: url("/img/sponsors/globant-logo.png") center center no-repeat;
+        background-size: 100%;
+    }
+    
+    main #eventoPrincipal .contenedor div ul li.ibm {
+        background: url("/img/sponsors/ibm-logo.png") center center no-repeat;
+        background-size: 100%;
+    }
+    
+    main #eventoPrincipal .contenedor div ul li.garagedeideas {
+        background: url("/img/sponsors/garagedeideas-logo.png") center center no-repeat;
+        background-size: 100%;
+    }
+    
+    main #eventoPrincipal .contenedor div ul li.icbc {
+        background: url("/img/sponsors/icbc-logo.png") center center no-repeat;
+        background-size: 100%;
+    }
+    
+    main #eventoPrincipal .contenedor div ul li.hexacta {
+        background: url("/img/sponsors/hexacta-logo.png") center center no-repeat;
+        background-size: 100%;
+    }
+    
+    main #eventos {
+        display: block;
+        height: auto;
+        padding: 40px 0;
+    }
+    
+    main #eventos .contenedor ul {
+        flex-wrap: wrap;
+    }
+    
+    main #eventos .contenedor ul li {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    main #eventos .contenedor ul li:first-child {
+        margin-top: 20px;
+    }
+    
+    main #queesunaservicejam .contenedor div {
+        max-width: 100%;
+    }
+    
+    main #asisevivenlasservicejams .contenedor {
+        padding: 0;
+    }
+    
+    main #equipo .contenedor ul li {
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+    
+    main #equipo .contenedor ul li div:last-child {
+        width: 70%;
+        padding: 0 0 0 20px;
+    }
+    
+    main #equipo .contenedor ul li div:last-child span.name {
+        font-size: 20px;
+    }
+    
+    main #equipo .contenedor ul li div:last-child span.title {
+        font-size: 14px;
+    }
+    
+    main #equipo .contenedor ul li div:last-child span a img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    main #partners .contenedor ul li {
+        width: 100% !important;
+        margin: 20px 0;
+        padding: 0;
+    }
+    
+    main #partners .contenedor ul li.areatres {
+        background: url("/img/sponsors/area3-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.findasense {
+        background: url("/img/sponsors/findasense-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.eklos {
+        background: url("/img/sponsors/eklos-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.globant {
+        background: url("/img/sponsors/globant-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.rosenfeld {
+        background: url("/img/sponsors/rosenfeld-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.ibm {
+        background: url("/img/sponsors/ibm-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.mural {
+        background: url("/img/sponsors/mural-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.coderhouse {
+        background: url("/img/sponsors/coderhouse-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.intercultura {
+        background: url("/img/sponsors/intercultura-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.garagedeideas {
+        background: url("/img/sponsors/garagedeideas-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.icbc {
+        background: url("/img/sponsors/icbc-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.hexacta {
+        background: url("/img/sponsors/hexacta-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.bid {
+        background: url("/img/sponsors/bid-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.galicia {
+        background: url("/img/sponsors/galicia-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.intallab {
+        background: url("/img/sponsors/intallab-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.labgobar {
+        background: url("/img/sponsors/labgobar-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.modernizacion {
+        background: url("/img/sponsors/modernizacion-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor ul li.reweb {
+        background: url("/img/sponsors/reweb-logo.png") center center no-repeat;
+    }
+    
+    main #partners .contenedor .contacto {
+        flex-wrap: wrap;
+    }
+    
+    main #partners .contenedor .contacto div,
+    main #partners .contenedor .contacto form {
+        width: 100%;
+    }
+    
+    main #masjams {
+        padding: 0;
+    }
+    
+    main #masjams .contenedor {
+        display: block;
+    }
+    
+    main #masjams .contenedor>div,
+    main #masjams .contenedor form {
+        width: 100%;
+    }
+    
+    main #masjams .contenedor>div div {
+        display: block;
+        text-align: center;
+    }
+    
+    main #masjams .contenedor>div div .logo {
+        width: 100px;
+        height: 150px;
+        background-size: contain;
+        margin: 0 0 20px 0;
+    }
+    
+    main #masjams .contenedor>div div p {
+        width: 100%;
+        text-align: left;
+    }
+    
+    main #redes .contenedor a .logo {
+        margin: 0 10px;
+    }
+}
