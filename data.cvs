@@ -1,4 +1,4 @@
-date,amount,name,price
+year,sex,name,n
 12/12/2019,10%,TSLA,220
 12/12/2019,15%,F,120
 12/12/2019,20%,GM,180
