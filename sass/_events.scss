@@ -57,12 +57,13 @@
   text-align: center;
   margin: 24px 0;
   @media only screen and (min-width: 600px) {
-    width: 23%;
+    width: 30%;
     height: 440px;
   }
 
   img {
     width: 160px;
+    min-height: 220px;
   }
 
   h3 {

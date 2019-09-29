@@ -57,6 +57,22 @@ input[type="submit"] {
     opacity: 0.5;
     cursor: default;
   }
+
+  &.button.null {
+    opacity: 0.5;
+    color: grey;
+    background: none;
+    text-decoration: line-through;
+    cursor: default;
+  }
+
+  &.link {
+    text-align: center;
+    padding: 0 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .btn-sponsor {
