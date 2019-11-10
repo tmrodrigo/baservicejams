@@ -9,9 +9,17 @@
   <meta property="og:title" content="BA Service Jams" />
   <meta property="og:description" content="Cambiemos el mundo en 48 horas. Desafiá tu capacidad de ideación y reforzá tu confianza creativa. Sumate a esta iniciativa global y participá desde Buenos Aires." />
 
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW) {
+         document.getElementById("contact").submit();
+       }
+     </script>
+
   <!-- instagram feed styles -->
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
-  <link rel="stylesheet" href="css/styles-1.4.css">
+  <link rel="stylesheet" href="css/styles-1.5.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12764966-1"></script>
@@ -365,7 +373,7 @@
               <form action="send-sponsor.php" id="contact" method="post">
                 <input type="email" name="email" value="" placeholder="Mail" required>
                 <textarea name="mensaje" placeholder="¿Cómo podemos ayudarte?" value=""></textarea>
-                <input class="button" type="submit" value="Enviar">
+                <button class="button g-recaptcha" style="background-color:black; padding:8px; color:white; border:0; border-radius:3px" data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW" data-callback='onSubmit'>ENVIAR</button>
               </form>
             </div>
           </div>
