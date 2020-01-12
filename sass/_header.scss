@@ -1,0 +1,52 @@
+header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background: #f4f4f5;
+  border-right: 1px solid rgba(255,255,255, 1);
+  height: 100vh;
+  width: 60px;
+  padding: 8px;
+  z-index: 1000;
+
+  @media only screen and (min-width: 600px) {
+      width: 80px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    ul {
+      @media only screen and (min-width: 600px) {
+        display: flex;
+        align-items: left;
+        flex-flow: column;
+
+      }
+
+      li {
+        display: inline-block;
+        margin: 24px 0 0 0;
+      }
+    }
+
+    .redes {
+      li {
+        margin: 16px;
+        a {
+          img {
+            width: 30px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

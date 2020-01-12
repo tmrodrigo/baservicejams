@@ -1,0 +1,116 @@
+#agenda {
+  .event-row {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+
+    @media only screen and (min-width: 600px) {
+      flex-flow: row;
+      margin-top: 90px;
+    }
+  }
+
+  .service {
+    span {
+      background-color: $service;
+    }
+
+    .btn:hover, .btn-secondary:hover {
+      background-color: $service;
+    }
+  }
+
+  .gender {
+    span {
+      background-color: $gender;
+    }
+
+    .btn:hover, .btn-secondary:hover {
+      background-color: $gender;
+    }
+  }
+
+  .gov {
+    span {
+      background-color: $gov;
+    }
+
+    .btn:hover, .btn-secondary:hover {
+      background-color: $gov;
+    }
+  }
+
+  .dxs {
+    span {
+      background-color: $dxs;
+    }
+
+    .btn:hover, .btn-secondary:hover {
+      background-color: $dxs;
+    }
+  }
+
+  .event-item {
+    border-left: 1px solid black;
+    padding: 0 8px;
+    // width: 20%;
+    margin-right: 8px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 48px 24px 0;
+
+    @media only screen and (min-width: 600px) {
+      width: 20%;
+      margin: 0;
+    }
+
+    span {
+      width: 8px;
+      height: 48px;
+      position: absolute;
+      left: -9px;
+      top: 0px;
+    }
+
+    h4 {
+      font-weight: bold;
+    }
+
+    img {
+      width: 180px;
+      margin: 8px 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    .btn {
+      border-radius: 8px;
+      background-color: $black;
+      color: $white;
+      text-transform: uppercase;
+      padding: 8px 32px;
+      margin-top: 24px;
+      width: 120px;
+      text-align: center;
+    }
+
+    .btn-secondary {
+      border-radius: 8px;
+      background-color: $white;
+      color: $black;
+      border: 1px solid $black;
+      text-transform: uppercase;
+      padding: 8px 32px;
+      margin-top: 24px;
+      width: 120px;
+      text-align: center;
+    }
+
+  }
+
+}
