@@ -141,7 +141,7 @@ main {
   margin-top: 24px; }
   @media only screen and (min-width: 600px) {
     .section-img {
-      width: 40%;
+      width: 35%;
       position: absolute;
       right: 20px;
       top: 80px; } }
@@ -169,13 +169,17 @@ section {
       padding: 0 48px; } }
   section h2 {
     text-align: left;
-    font-size: 56px; }
+    font-size: 32px; }
     @media only screen and (min-width: 600px) {
       section h2 {
-        margin-bottom: 32px; } }
-  section p {
+        margin-bottom: 56px;
+        font-size: 56px; } }
+  section p, section a {
     font-size: 16px;
     line-height: 1.2; }
+  section a {
+    text-decoration: underline;
+    font-weight: bold; }
 
 #home, #asisevivenlasservicejams {
   min-height: 50vh;
@@ -263,7 +267,7 @@ input[type="submit"], button {
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     width: 100px;
-    margin: 12px; }
+    margin: 16px 0; }
     .sponsors-wrapper .sponsor img:hover {
       -webkit-filter: none;
       /* Safari 6.0 - 9.0 */
@@ -271,7 +275,8 @@ input[type="submit"], button {
     @media only screen and (min-width: 600px) {
       .sponsors-wrapper .sponsor img {
         width: 120px;
-        margin: 24px; } }
+        margin: 24px;
+        margin: 12px; } }
   .sponsors-wrapper .cuadrado img {
     width: 60px; }
 
@@ -295,7 +300,10 @@ input[type="submit"], button {
       #equipo .team-wrapper img {
         width: 120px; } }
   #equipo .team-wrapper p {
-    font-size: 14px; }
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: grey; }
   #equipo .team-wrapper a {
     margin-top: 16px; }
     #equipo .team-wrapper a img {
@@ -304,6 +312,45 @@ input[type="submit"], button {
 
 #contacto {
   padding-bottom: 48px; }
+
+#que-hacemos .activities {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column; }
+  @media only screen and (min-width: 600px) {
+    #que-hacemos .activities {
+      flex-flow: row; } }
+  #que-hacemos .activities .activity {
+    background-color: white;
+    padding: 24px;
+    color: black;
+    margin: 16px 0;
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column; }
+    @media only screen and (min-width: 600px) {
+      #que-hacemos .activities .activity {
+        width: 28%;
+        min-height: 200px;
+        margin: 32px 0; } }
+    #que-hacemos .activities .activity span {
+      width: 24px;
+      height: 2px;
+      background-color: black;
+      display: block;
+      margin-bottom: 8px;
+      margin-left: 2px; }
+    #que-hacemos .activities .activity h3 {
+      font-size: 40px;
+      margin-bottom: 24px; }
+  #que-hacemos .activities .black {
+    background-color: black;
+    color: white;
+    border: 2px solid white; }
+    #que-hacemos .activities .black span {
+      background-color: white; }
 
 header {
   position: fixed;
@@ -368,14 +415,29 @@ form {
   text-align: center;
   color: #fff;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 50vh; }
+  height: 80vh; }
   @media only screen and (min-width: 600px) {
     #hero {
       height: 90vh; } }
+  #hero .section-text {
+    text-align: left;
+    margin-left: 50px;
+    width: 80%;
+    height: 70vh;
+    justify-content: flex-end; }
+    @media only screen and (min-width: 600px) {
+      #hero .section-text {
+        margin-left: 100px;
+        width: 40%; } }
+    #hero .section-text h1 {
+      font-size: 64px; }
+    #hero .section-text p {
+      font-size: 18px;
+      line-height: 1.6; }
 
 #agenda .event-row {
   display: flex;
@@ -523,54 +585,61 @@ form {
           .item-row .item-wrapper .logos img.round {
             width: 120px; } }
 
-footer .footer-container {
+.footer-container {
   padding: 48px 24px; }
   @media only screen and (min-width: 600px) {
-    footer .footer-container {
+    .footer-container {
       width: 80%;
       margin-left: 10%; }
-      footer .footer-container form {
+      .footer-container form {
         margin: 0; } }
-  footer .footer-container h3 {
+  .footer-container h3 {
     font-size: 18px;
     margin-bottom: 8px; }
-footer .suscribe-container {
-  margin-bottom: 48px; }
+
+.suscribe-container {
+  margin-bottom: 48px;
+  display: flex;
+  flex-flow: column; }
   @media only screen and (min-width: 600px) {
-    footer .suscribe-container {
+    .suscribe-container {
       display: flex;
       flex-flow: row;
       align-items: center;
       margin: 0; } }
-  footer .suscribe-container h2 {
-    text-align: left; }
-    @media only screen and (min-width: 600px) {
-      footer .suscribe-container h2 {
-        text-align: center; } }
-  footer .suscribe-container #mc_embed_signup {
+  .suscribe-container h2 {
+    text-align: left;
+    font-size: 32px; }
+  .suscribe-container i {
+    font-size: 12px;
+    color: grey; }
+  .suscribe-container #mc_embed_signup {
     width: 100%; }
-  footer .suscribe-container form {
+  .suscribe-container form {
     width: 100%;
     flex-flow: row; }
-    footer .suscribe-container form #mc_embed_signup_scroll {
+    .suscribe-container form #mc_embed_signup_scroll {
       width: 100%; }
       @media only screen and (min-width: 600px) {
-        footer .suscribe-container form #mc_embed_signup_scroll {
+        .suscribe-container form #mc_embed_signup_scroll {
           display: flex;
           flex-flow: row; }
-          footer .suscribe-container form #mc_embed_signup_scroll .mc-field-group {
+          .suscribe-container form #mc_embed_signup_scroll .mc-field-group {
             width: 70%;
             margin-right: 24px; } }
-      footer .suscribe-container form #mc_embed_signup_scroll input[type="submit"] {
+      .suscribe-container form #mc_embed_signup_scroll input[type="submit"] {
         background-color: #000000;
         color: #ffffff;
         border: 1px solid #ffffff; }
-        footer .suscribe-container form #mc_embed_signup_scroll input[type="submit"]:hover {
+        .suscribe-container form #mc_embed_signup_scroll input[type="submit"]:hover {
           background-color: #ffffff;
           color: #000000;
           border: 1px solid #000000; }
         @media only screen and (min-width: 600px) {
-          footer .suscribe-container form #mc_embed_signup_scroll input[type="submit"] {
+          .suscribe-container form #mc_embed_signup_scroll input[type="submit"] {
             margin: 0; } }
+  .suscribe-container .suscribe-text {
+    display: flex;
+    flex-flow: column; }
 
 /*# sourceMappingURL=styles.css.map */

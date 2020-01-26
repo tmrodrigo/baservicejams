@@ -19,7 +19,7 @@
 
   <!-- instagram feed styles -->
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
-  <link rel="stylesheet" href="css/styles-2.1.css">
+  <link rel="stylesheet" href="css/styles-2.2.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12764966-1"></script>
@@ -55,12 +55,13 @@
     <nav class="contenedor">
       <h1><img src="img/logos/baservicejams.svg" alt="BA Service Jams"></h1>
       <ul class="menu">
-        <li><a href="#quienes-somos">Hola</a></li>
+        <li><a href="#hero">Hola</a></li>
+        <li><a href="#que-hacemos">¿Qué hacemos?</a></li>
         <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#ha-pasado">Ha pasado</a></li>
+        <li><a href="#contact">Sé sponsor</a></li>
+        <li><a href="#partners">Nuestros héroes</a></li>
+        <li><a href="#mas-jams">Más Jams</a></li>
         <li><a href="#equipo">Equipo</a></li>
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="#contact">Contacto</a></li>
       </ul>
       <ul class="redes">
         <li>
@@ -90,7 +91,8 @@
     <div id="hero">
       <div class="contenedor">
         <div class="section-text">
-          <h1>Hola</h1>
+          <h1>¡Hola!</h1>
+          <br><br>
           <p>
           Somos BA Service Jams, una organización sin fines de lucro formada por profesionales de diversas empresas e instituciones apasionados por el Diseño de Servicios. Nos unimos para hacer crecer la comunidad y potenciar la práctica en el ámbito local.
           </p>
@@ -99,9 +101,9 @@
       <div id="background-video" data-property="{videoURL:'XKbf5XyBo88',containment:'body',autoPlay:true, mute:true, startAt:4,opacity:1,plugin: true}">
       </div>
     </div>
-    <section id="ha-pasado" class="black-bg">
+    <section id="que-hacemos" class="black-bg">
       <div class="contenedor">
-        <h2>¿Qué actividades hemos hecho?</h2>
+        <h2>¿Qué hacemos?</h2>
         <div class="activities">
           <div class="activity">
             <div>
@@ -135,7 +137,7 @@
     </section>
     <section id="agenda" class="white-bg">
       <div class="contenedor">
-        <h2>Encuentros 2020</h2>
+        <h2>Agenda 2020</h2>
         <!-- <h3>BAServiceJams</h3> -->
         <div class="event-row">
           <div class="event-item service">
@@ -186,12 +188,15 @@
         </div>
       </div>
     </section> -->
-    <footer class="white-bg">
+    <div class="white-bg">
       <div class="contenedor">
         <div class="row">
           <div class="footer-container">
             <div class="suscribe-container">
-              <h2>Enterate de las próximas Jams</h2>
+              <div class="suscribe-text">
+                <h2>Enterate primero de lo que se viene</h2>
+                <i>Prometemos no spammearte ni compartir tu mail con nadie más sin tu consentimiento</i>
+              </div>
               <div id="mc_embed_signup">
                 <form action="https://baservicejams.us19.list-manage.com/subscribe/post?u=8112196da2a1da493a9d5bf9c&amp;id=cc55eeef59" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
                   novalidate>
@@ -216,7 +221,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </div>
     <!-- <section id="asisevivenlasservicejams" class="white-bg">
       <div class="contenedor">
         <div class="row">
@@ -226,116 +231,53 @@
       </div>
     </section> -->
 
-    <section id="equipo" class="black-bg">
+    <section id="contacto" class="black-bg">
       <div class="contenedor">
-        <div class="row">
-          <h2>Equipo</h2>
+        <div class="section-text">
+          <h2>Sé nuestro sponsor</h2>
+          <p>
+          Como organización sin fines de lucro nos apoyamos en las contribuciones de nuestros sponsors para la realización de todos nuestros eventos. Buscamos siempre <b>crear encuentros con experiencias y contenidos de calidad</b> y para ello la ayuda de nuestros aliados y sponsors es fundamental.<br><br>
+
+          Ofrecemos diferentes propuestas de <b>sponsoreo a medida</b> de las capacidades e intereses de cada marca, empresa u organización.<br><br>
+
+          Las <b>Jams y DXS</b> son una gran oportunidad para <b>conectar con la comunidad de expertos</b>, nuevos talentos y líderes de la industria del diseño y la innovación en servicios.<br><br>
+
+          ¡Escribinos para saber más!
+
+          </p>
+          <form action="send-sponsor.php" id="contact" method="post">
+            <input type="email" name="email" value="" placeholder="Mail" required>
+            <textarea name="mensaje" placeholder="¿Cómo podemos ayudarle?" value=""></textarea>
+            <button class="button g-recaptcha" style="background-color:black; padding:8px; color:white; border:0; border-radius:3px" data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW" data-callback='onSubmit'>ENVIAR</button>
+          </form>
         </div>
-        <div class="row row-team-wrapper">
-          <div class="team-wrapper">
-            <img src="img/team/magali.png" alt="Magalí Amalla">
-            <div>
-              <h3>Magalí Amalla</h3>
-              <p>Directora de Diseño de Experiencias<br>GLOBANT</p>
-              <div class="profile-links">
-                <a href="https://www.linkedin.com/in/magaliamalla/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
-                <a href="https://twitter.com/magaliamalla" target="_blank"><img src="img/twitter.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-wrapper">
-            <img src="img/team/jimena.png" alt="Jimena Califa">
-            <div>
-              <h3>Jimena Califa</h3>
-              <p>Design Strategist</p>
-              <div class="profile-links">
-                <a href="https://www.linkedin.com/in/jimenacalifa/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
-                <a href="https://twitter.com/jimenacalifa" target="_blank"><img src="img/twitter.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-wrapper">
-            <img src="img/team/melanie.png" alt="Melanie Durán">
-            <div>
-              <h3>Melanie Durán</h3>
-              <p>Head of Strategic Design<br>INTER-CULTURA</p>
-              <div class="profile-links">
-                <a href="https://www.linkedin.com/in/duranmelanie/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-wrapper">
-            <img src="img/team/tomas.png" alt="Tomás Ottolenghi">
-            <div>
-              <h3>Tomás Ottolenghi</h3>
-              <p>Service Designer<br>GLOBANT</p>
-              <div class="profile-links">
-                <a href="https://www.linkedin.com/in/tomasottolenghiv/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="team-wrapper">
-            <img src="img/team/juan.png" alt="Juan Camillo Reyes">
-            <div>
-              <h3>Juan Camillo Reyes</h3>
-              <p>DISEÑADOR DE SERVICIOS @ GLOBANT</p>
-              <div class="profile-links">
-                <a href="https://www.linkedin.com/in/juan-camilo-reyes-004253147/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
-                <a href="https://twitter.com/gesch" target="_blank"><img src="img/twitter.svg" alt=""></a>
-              </div>
-            </div>
-          </div> -->
-          <div class="team-wrapper">
-            <img src="img/team/pablo.png" alt="Pablo Fernández Vallejo">
-            <div>
-              <h3>Pablo Fernández Vallejo</h3>
-              <p>Service Design Consultant</p>
-              <div class="profile-links">
-                <a href="https://www.linkedin.com/in/pablofernandezvallejo/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
-                <a href="https://twitter.com/pablitofv" target="_blank"><img src="img/twitter.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-wrapper">
-            <img src="img/team/ro.png" alt="Rodrigo Trejo Muñiz">
-            <div>
-              <h3>Rodrigo Trejo Muñiz</h3>
-              <p>UX/UI Designer <br>SANTANDER</p>
-              <div class="profile-links">
-                <a href="https://www.linkedin.com/in/tmrodrigo/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-wrapper">
-            <img src="img/team/federico.png" alt="Federico Romano">
-            <div>
-              <h3>Federico Romano</h3>
-              <p>UX Designer Overactive</p>
-              <div class="profile-links">
-                <a href="https://www.linkedin.com/in/federomano/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
+        <div class="section-img">
+          <img src="img/abrazo.png" alt="">
         </div>
       </div>
     </section>
     <section id="partners" class="white-bg">
       <div class="contenedor">
-        <h2>Nos han apoyado</h2>
+        <h2>Colaboraron con nosotros</h2>
         <div class="row sponsors-wrapper">
           <div class="sponsor">
-            <a href="https://www.acamica.com" target="_blank">
-              <img src="img/logos/acamica.svg" alt="Acámica">
+            <a href="https://www.icbc.com.ar/" target="_blank">
+              <img src="img/sponsors/icbc-logo.png" alt="">
             </a>
           </div>
           <div class="sponsor">
-            <a href="https://baufest.com/es/" target="_blank">
-              <img src="img/logos/baufest.svg" alt="Baufest">
+            <a href="https://www.bancogalicia.com" target="_blank">
+              <img src="img/sponsors/galicia-logo.png" alt="">
             </a>
           </div>
           <div class="sponsor">
-            <a href="http://nnido.com.ar/" target="_blank">
-              <img src="img/logos/nnido.svg" alt="Nnido">
+            <a href="https://www.bbva.com.ar" target="_blank">
+              <img src="img/sponsors/bbva.png" alt="">
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="http://ux.mercadolibre.com/" target="_blank">
+              <img src="img/sponsors/mercadolibre.png" alt="">
             </a>
           </div>
           <div class="sponsor">
@@ -344,28 +286,13 @@
             </a>
           </div>
           <div class="sponsor">
-            <a href="https://www.hexacta.com/" target="_blank">
-              <img src="img/sponsors/hexacta-logo.png" alt="">
-            </a>
-          </div>
-          <div class="sponsor">
-            <a href="https://www.icbc.com.ar/" target="_blank">
-              <img src="img/sponsors/icbc-logo.png" alt="">
-            </a>
-          </div>
-          <div class="sponsor">
-            <a href="https://www.ibm.com/ar-es/" target="_blank">
-              <img src="img/sponsors/ibm-logo.png" alt="">
-            </a>
-          </div>
-          <div class="sponsor">
             <a href="https://www.globant.com/" target="_blank">
               <img src="img/sponsors/globant-logo.png" alt="">
             </a>
           </div>
-          <div class="sponsor">
-            <a href="http://rosenfeldmedia.com" target="_blank">
-              <img src="img/sponsors/rosenfeld-logo.png" alt="">
+          <div class="sponsor cuadrado">
+            <a href="https://inter-cultura.com/" target="_blank">
+              <img src="img/sponsors/intercultura-logo.png" alt="">
             </a>
           </div>
           <div class="sponsor">
@@ -379,6 +306,45 @@
             </a>
           </div>
           <div class="sponsor">
+            <a href="https://www.acamica.com" target="_blank">
+              <img src="img/logos/acamica.svg" alt="Acámica">
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="https://baufest.com/es/" target="_blank">
+              <img src="img/logos/baufest.svg" alt="Baufest">
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="https://www.fluxitsoft.com/en/home/" target="_blank">
+              <img src="img/sponsors/fluxit.png" alt="">
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="http://nnido.com.ar/" target="_blank">
+              <img src="img/sponsors/nnido.svg" alt="Nnido">
+            </a>
+          </div>
+
+          <div class="sponsor">
+            <a href="https://www.hexacta.com/" target="_blank">
+              <img src="img/sponsors/hexacta-logo.png" alt="">
+            </a>
+          </div>
+
+          <div class="sponsor">
+            <a href="https://www.ibm.com/ar-es/" target="_blank">
+              <img src="img/sponsors/ibm-logo.png" alt="">
+            </a>
+          </div>
+
+          <div class="sponsor">
+            <a href="http://rosenfeldmedia.com" target="_blank">
+              <img src="img/sponsors/rosenfeld-logo.png" alt="">
+            </a>
+          </div>
+
+          <div class="sponsor">
             <a href="https://www.argentina.gob.ar/modernizacion" target="_blank">
               <img src="img/sponsors/modernizacion-logo.png" alt="">
             </a>
@@ -388,11 +354,7 @@
               <img src="img/sponsors/intallab-logo.png" alt="">
             </a>
           </div>
-          <div class="sponsor">
-            <a href="https://www.bancogalicia.com" target="_blank">
-              <img src="img/sponsors/galicia-logo.png" alt="">
-            </a>
-          </div>
+
           <div class="sponsor">
             <a href="https://www.reweb.com.ar" target="_blank">
               <img src="img/sponsors/reweb-logo.png" alt="">
@@ -418,31 +380,19 @@
               <img src="img/sponsors/coderhouse-logo.png" alt="">
             </a>
           </div>
-          <div class="sponsor cuadrado">
-            <a href="https://inter-cultura.com/" target="_blank">
-              <img src="img/sponsors/intercultura-logo.png" alt="">
-            </a>
-          </div>
+
           <div class="sponsor">
             <a href="https://ar.findasense.com/" target="_blank">
               <img src="img/sponsors/findasense-logo.png" alt="">
             </a>
           </div>
-          <div class="sponsor">
-            <a href="https://www.bbva.com.ar" target="_blank">
-              <img src="img/sponsors/bbva.png" alt="">
-            </a>
-          </div>
+
           <div class="sponsor">
             <a href="https://www.digitalhouse.com/" target="_blank">
               <img src="img/sponsors/digitalhouse.png" alt="">
             </a>
           </div>
-          <div class="sponsor">
-            <a href="https://www.fluxitsoft.com/en/home/" target="_blank">
-              <img src="img/sponsors/fluxit.png" alt="">
-            </a>
-          </div>
+
           <div class="sponsor">
             <a href="https://www.intive.com/es" target="_blank">
               <img src="img/sponsors/intive.png" alt="">
@@ -483,36 +433,103 @@
               <img src="img/sponsors/gire.png" alt="">
             </a>
           </div>
-          <div class="sponsor">
-            <a href="http://ux.mercadolibre.com/" target="_blank">
-              <img src="img/sponsors/mercadolibre.png" alt="">
-            </a>
-          </div>
+
         </div>
       </div>
     </section>
-    <section id="contacto" class="white-bg">
+    <section id="mas-jams" class="black-bg">
       <div class="contenedor">
         <div class="section-text">
-          <h2>Sé nuestro sponsor</h2>
-          <p>Como organización sin fines de lucro nos apoyamos en las contribuciones de nuestros sponsors para la realización de todos nuestros eventos. Buscamos siempre <b>crear encuentros con experiencias y contenidos</b> de calidad y para ello tu ayuda es fundamental.<br><br>
-
-          Ofrecemos diferentes propuestas de sponsoreo en caso de que quieras <b>acompañarnos</b> en un evento en particular o a lo largo de todo el año.<br><br>
-
-          Las <b>Jams y DXS</b> son una gran oportunidad para <b>
-          conectar tu marca o empresa con la comunidad de expertos,</b> nuevos talentos y líderes de la industria del diseño y la innovación en servicios.<br><br>
-
-          <i>¡Nos encantaría contar con ustedes!</i>
-
+          <h2>Más Jams</h2>
+          <p>¡Nos encanta que la comunidad jammer siga creciendo! Desde 2019 apoyamos activamente a equipos interesados en llevar el espíritu de la Global Service Jams a nuevas ciudades de la región.
+            <br><br>
+          ¿Te interesa organizar una jam en tu ciudad? <a href="mailto:baservicejams@gmail.com" target="_blank" >Escribinos</a> y te contactaremos para ayudarte a lograrlo.
           </p>
-          <form action="send-sponsor.php" id="contact" method="post">
-            <input type="email" name="email" value="" placeholder="Mail" required>
-            <textarea name="mensaje" placeholder="¿Cómo podemos ayudarte?" value=""></textarea>
-            <button class="button g-recaptcha" style="background-color:black; padding:8px; color:white; border:0; border-radius:3px" data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW" data-callback='onSubmit'>ENVIAR</button>
-          </form>
         </div>
         <div class="section-img">
-          <img src="img/abrazo.png" alt="">
+          <img src="img/logos/mas-jam.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="equipo" class="white-bg">
+      <div class="contenedor">
+        <div class="row">
+          <h2>Equipo</h2>
+        </div>
+        <div class="row row-team-wrapper">
+          <div class="team-wrapper">
+            <img src="img/team/magali.png" alt="Magalí Amalla">
+            <div>
+              <h3>Magalí Amalla</h3>
+              <p>Directora de Experiencias<br>@ GLOBANT</p>
+              <div class="profile-links">
+                <a href="https://www.linkedin.com/in/magaliamalla/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+                <a href="https://twitter.com/magaliamalla" target="_blank"><img src="img/twitter.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-wrapper">
+            <img src="img/team/jimena.png" alt="Jimena Califa">
+            <div>
+              <h3>Jimena Califa</h3>
+              <p>Diseñadora Estratégica</p>
+              <div class="profile-links">
+                <a href="https://www.linkedin.com/in/jimenacalifa/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+                <a href="https://twitter.com/jimenacalifa" target="_blank"><img src="img/twitter.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-wrapper">
+            <img src="img/team/melanie.png" alt="Melanie Durán">
+            <div>
+              <h3>Melanie Durán</h3>
+              <p>Head of Strategic Design<br>@ INTER-CULTURA</p>
+              <div class="profile-links">
+                <a href="https://www.linkedin.com/in/duranmelanie/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-wrapper">
+            <img src="img/team/tomas.png" alt="Tomás Ottolenghi">
+            <div>
+              <h3>Tomás Ottolenghi</h3>
+              <p>Diseñador de Servicios<br>@ GLOBANT</p>
+              <div class="profile-links">
+                <a href="https://www.linkedin.com/in/tomasottolenghiv/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-wrapper">
+            <img src="img/team/pablo.png" alt="Pablo Fernández Vallejo">
+            <div>
+              <h3>Pablo Fernández Vallejo</h3>
+              <p>Diseñador de Servicios <br>@ Laboratorio de Gobierno Argentino</p>
+              <div class="profile-links">
+                <a href="https://www.linkedin.com/in/pablofernandezvallejo/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+                <a href="https://twitter.com/pablitofv" target="_blank"><img src="img/twitter.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-wrapper">
+            <img src="img/team/federico.png" alt="Federico Romano">
+            <div>
+              <h3>Federico Romano</h3>
+              <p>Diseñador de experiencia de usuario<br>@ Overactive</p>
+              <div class="profile-links">
+                <a href="https://www.linkedin.com/in/federomano/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-wrapper">
+            <img src="img/team/ro.png" alt="Rodrigo Trejo Muñiz">
+            <div>
+              <h3>Rodrigo Trejo Muñiz</h3>
+              <p>Diseñador UX/UI <br>@ Santander</p>
+              <div class="profile-links">
+                <a href="https://www.linkedin.com/in/tmrodrigo/" target="_blank"><img src="img/linkedin.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

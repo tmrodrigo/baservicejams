@@ -46,7 +46,7 @@ main {
   margin-top: 24px;
 
   @media only screen and (min-width: 600px) {
-    width: 40%;
+    width: 35%;
     position: absolute;
     right: 20px;
     top: 80px;
@@ -86,15 +86,21 @@ section {
 
   h2 {
     text-align: left;
-    font-size: 56px;
+    font-size: 32px;
     @media only screen and (min-width: 600px) {
-      margin-bottom: 32px;
+      margin-bottom: 56px;
+      font-size: 56px;
     }
   }
 
-  p {
+  p, a {
     font-size: 16px;
     line-height: 1.2;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: bold;
   }
 }
 
@@ -212,7 +218,7 @@ input[type="submit"], button {
       /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
       width: 100px;
-      margin: 12px;
+      margin: 16px 0;
 
       &:hover {
         -webkit-filter: none;
@@ -222,6 +228,7 @@ input[type="submit"], button {
       @media only screen and (min-width: 600px) {
         width: 120px;
         margin: 24px;
+        margin: 12px;
       }
     }
   }
@@ -262,7 +269,10 @@ input[type="submit"], button {
     }
 
     p {
-      font-size: 14px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: grey;
     }
 
     a {
@@ -281,7 +291,7 @@ input[type="submit"], button {
   padding-bottom: 48px;
 }
 
-#ha-pasado {
+#que-hacemos {
   .activities {
     margin-top: 32px;
     display: flex;
@@ -297,14 +307,16 @@ input[type="submit"], button {
       background-color: white;
       padding: 24px;
       color: black;
-      margin: 32px 0;
-      min-height: 200px;
+      margin: 16px 0;
+      min-height: 120px;
       display: flex;
       justify-content: space-between;
       flex-flow: column;
 
       @media only screen and (min-width: 600px) {
         width: 28%;
+        min-height: 200px;
+        margin: 32px 0;
       }
 
       span {
