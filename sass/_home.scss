@@ -19,13 +19,22 @@
 
       @media only screen and (min-width: 600px) {
         margin-left: 100px;
-        width: 40%;
+        width: 50%;
       }
 
       justify-content: flex-end;
 
       h1 {
         font-size: 64px;
+      }
+
+      img {
+        display: none;
+        @media only screen and (min-width: 600px) {
+          display: block;
+          max-width: 180px;
+          margin-bottom: 24px;
+        }
       }
 
       p {

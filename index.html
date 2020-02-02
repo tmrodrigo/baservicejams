@@ -9,17 +9,29 @@
   <meta property="og:title" content="BA Service Jams" />
   <meta property="og:description" content="Desafiá tu capacidad de ideación y reforzá tu confianza creativa. Sumate a esta iniciativa global y participá desde Buenos Aires." />
 
-
+<!--
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
      <script>
-       function onSubmit(6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW) {
+       function onSubmit('6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW') {
          document.getElementById("contact").submit();
        }
-     </script>
+     </script> -->
+     <script>
+             var onSubmit = function(6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW) {
+               console.log('success!');
+             };
+
+             var onloadCallback = function() {
+               grecaptcha.render('submit', {
+                 'sitekey' : '6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW',
+                 'callback' : onSubmit
+               });
+             };
+         </script>
 
   <!-- instagram feed styles -->
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
-  <link rel="stylesheet" href="css/styles-2.2.css">
+  <link rel="stylesheet" href="css/styles.2.3.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12764966-1"></script>
@@ -59,7 +71,7 @@
         <li><a href="#que-hacemos">¿Qué hacemos?</a></li>
         <li><a href="#agenda">Agenda</a></li>
         <li><a href="#contact">Sé sponsor</a></li>
-        <li><a href="#partners">Nuestros héroes</a></li>
+        <li><a href="#partners">Nos apoyan</a></li>
         <li><a href="#mas-jams">Más Jams</a></li>
         <li><a href="#equipo">Equipo</a></li>
       </ul>
@@ -91,10 +103,12 @@
     <div id="hero">
       <div class="contenedor">
         <div class="section-text">
+          <img src="img/logos/baservicejams.svg" alt="BA Service Jams">
           <h1>¡Hola!</h1>
           <br><br>
           <p>
-          Somos BA Service Jams, una organización sin fines de lucro formada por profesionales de diversas empresas e instituciones apasionados por el Diseño de Servicios. Nos unimos para hacer crecer la comunidad y potenciar la práctica en el ámbito local.
+            Somos BA Service Jams, una organización sin fines de lucro formada por profesionales de diversas empresas e instituciones apasionados por el Diseño de Servicios.<br>
+            Nos une la motivación por hacer crecer la comunidad y potenciar la práctica en el ámbito local ¡Te invitamos a conocernos!
           </p>
         </div>
       </div>
@@ -166,7 +180,7 @@
           </div>
           <div class="event-item gov">
             <span class="event-color"></span>
-            <h4>Ocrtubre</h4>
+            <h4>Octubre</h4>
             <img src="img/logos/bagovjamlogo20.svg" alt="BA Service Jams">
             <p>Dos días enfocados en la co-creación de servicios junto a profesionales del sector público.</p>
             <!-- <a href="#contacto" class="btn" target="_blank">Sponsorear</a>
@@ -247,9 +261,11 @@
           </p>
           <form action="send-sponsor.php" id="contact" method="post">
             <input type="email" name="email" value="" placeholder="Mail" required>
-            <textarea name="mensaje" placeholder="¿Cómo podemos ayudarle?" value=""></textarea>
-            <button class="button g-recaptcha" style="background-color:black; padding:8px; color:white; border:0; border-radius:3px" data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW" data-callback='onSubmit'>ENVIAR</button>
+            <textarea name="mensaje" placeholder="¿Cómo podemos colaborar?" value=""></textarea>
+            <!-- <button class="button g-recaptcha" style="background-color:black; padding:8px; color:white; border:0; border-radius:3px" data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW" data-callback='onSubmit'>ENVIAR</button> -->
+            <input class="button-negative" id="submit" type="submit" value="Enviar">
           </form>
+          <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
         </div>
         <div class="section-img">
           <img src="img/abrazo.png" alt="">
@@ -321,8 +337,8 @@
             </a>
           </div>
           <div class="sponsor">
-            <a href="http://nnido.com.ar/" target="_blank">
-              <img src="img/sponsors/nnido.svg" alt="Nnido">
+            <a href="https://puntolab.co/" target="_blank">
+              <img src="img/sponsors/puntolab.png" alt="">
             </a>
           </div>
 
@@ -414,10 +430,11 @@
             </a>
           </div>
           <div class="sponsor">
-            <a href="https://puntolab.co/" target="_blank">
-              <img src="img/sponsors/puntolab.png" alt="">
+            <a href="http://nnido.com.ar/" target="_blank">
+              <img src="img/sponsors/nnido.svg" alt="Nnido">
             </a>
           </div>
+
           <div class="sponsor">
             <a href="https://www.lanacion.com.ar/" target="_blank">
               <img src="img/sponsors/lanacion.png" alt="">
@@ -538,8 +555,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="js/instafeed.min.js"></script>
-    <script src="js/typewrite.js"></script>
 
     <script src="js/YTPlayer.min.js"></script>
     <script>
@@ -551,35 +566,6 @@
         $('html, body').animate({
           scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
-      });
-
-      // Instagram feed, se inyecta en el tag #insta
-      $(document).ready(function() {
-        var userFeed = new Instafeed({
-          get: 'user',
-          userId: '7160524533',
-          accessToken: '7160524533.e1244fa.8a6106ee7f124b98b3ebece4723fd805',
-          clientId: 'e1244fa2f5644b3b83510ddff52b7f06',
-          limit: 24,
-          resolution: 'low_resolution',
-          after: function() {
-            $('#instafeed').slick({
-              dots: false,
-              infinite: true,
-              speed: 600,
-              slidesToShow: 10,
-              centerMode: true,
-              variableWidth: true,
-              autoplay: true,
-              autoplaySpeed: 2000,
-              prevArrow: "",
-              nextArrow: "",
-              draggable: false
-            });
-          }
-        });
-        userFeed.run();
-
       });
     </script>
 </body>
