@@ -9,27 +9,8 @@
   <meta property="og:title" content="BA Service Jams" />
   <meta property="og:description" content="Desafiá tu capacidad de ideación y reforzá tu confianza creativa. Sumate a esta iniciativa global y participá desde Buenos Aires." />
 
-<!--
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-     <script>
-       function onSubmit('6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW') {
-         document.getElementById("contact").submit();
-       }
-     </script> -->
-     <script>
-             var onSubmit = function(6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW) {
-               console.log('success!');
-             };
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-             var onloadCallback = function() {
-               grecaptcha.render('submit', {
-                 'sitekey' : '6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW',
-                 'callback' : onSubmit
-               });
-             };
-         </script>
-
-  <!-- instagram feed styles -->
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
   <link rel="stylesheet" href="css/styles.2.3.css">
 
@@ -262,6 +243,7 @@
           <form action="send-sponsor.php" id="contact" method="post">
             <input type="email" name="email" value="" placeholder="Mail" required>
             <textarea name="mensaje" placeholder="¿Cómo podemos colaborar?" value=""></textarea>
+            <div class="g-recaptcha" data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW"></div>
             <!-- <button class="button g-recaptcha" style="background-color:black; padding:8px; color:white; border:0; border-radius:3px" data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW" data-callback='onSubmit'>ENVIAR</button> -->
             <input class="button-negative" id="submit" type="submit" value="Enviar">
           </form>
