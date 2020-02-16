@@ -298,6 +298,12 @@ input[type="submit"], button {
 
 #contacto {
   padding-bottom: 48px;
+
+  .section-text {
+    @media only screen and (min-width: 600px) {
+      width: 55%;
+    }
+  }
 }
 
 #que-hacemos {

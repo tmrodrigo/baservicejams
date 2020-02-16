@@ -320,6 +320,9 @@ input[type="submit"], button {
 
 #contacto {
   padding-bottom: 48px; }
+  @media only screen and (min-width: 600px) {
+    #contacto .section-text {
+      width: 55%; } }
 
 #que-hacemos .activities {
   margin-top: 32px;
@@ -658,6 +661,9 @@ form {
             margin: 0; } }
   .suscribe-container .suscribe-text {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    margin-right: 16px; }
+    .suscribe-container .suscribe-text h3 {
+      font-size: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

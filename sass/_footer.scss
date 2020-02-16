@@ -78,5 +78,10 @@
   .suscribe-text {
     display: flex;
     flex-flow: column;
+    margin-right: 16px;
+
+    h3 {
+      font-size: 20px;
+    }
   }
 }
