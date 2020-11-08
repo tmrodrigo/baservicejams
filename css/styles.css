@@ -542,6 +542,10 @@ form {
     margin-top: 24px;
     width: 120px;
     text-align: center; }
+#agenda .cancel {
+  opacity: 0.5; }
+  #agenda .cancel h4 {
+    text-decoration: line-through; }
 
 .main-event-wrapper {
   display: flex;
