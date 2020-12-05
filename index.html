@@ -266,14 +266,24 @@
           ¡Escribinos para saber más!
 
           </p>
+          <script src="https://www.google.com/recaptcha/api.js"></script>
+          <script>
+          function onSubmit(token) {
+            document.getElementById("contact").submit();
+          }
+        </script>
           <form action="send-sponsor.php" id="contact" method="post">
             <input type="email" name="email" value="" placeholder="Mail" required>
             <textarea name="mensaje" placeholder="¿Cómo podemos colaborar?" value=""></textarea>
-            <div class="g-recaptcha" data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW"></div>
-            <!-- <button class="button g-recaptcha" style="background-color:black; padding:8px; color:white; border:0; border-radius:3px" data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW" data-callback='onSubmit'>ENVIAR</button> -->
-            <input class="button-negative" id="submit" type="submit" value="Enviar">
+            <button
+              class="button g-recaptcha"
+              data-sitekey="6Lfs9sEUAAAAAB0d-mwSrWym6dQQtuPC_E5Zs6iW"
+              data-callback='onSubmit'
+              data-action='submit'>
+              ENVIAR
+            </button>
+            <!-- <input class="button-negative" id="submit" type="submit" value="Enviar"> -->
           </form>
-          <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
         </div>
         <div class="section-img">
           <img src="img/abrazo.png" alt="">
